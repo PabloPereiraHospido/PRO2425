@@ -1,20 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package ud1;
 
-/**
- *
- * @author perhospab
- */
+package ud1;
+import java.math.BigDecimal;
+//comantario de una linea
+
 public class UD1 {
 
-    /**
-     * @param args the command line arguments
-     */
+    /*Pablo
+    Pereira
+    Hospido
+    */
     public static void main(String[] args) {
+        
        System.out.println("Hola mundo");
+    System.out.println("Hola mundo");
     }
+    
     
 }
