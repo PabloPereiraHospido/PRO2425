@@ -1,4 +1,6 @@
-public class HolaMundo {
+package UD1;
+
+public class Teoria1 {
     public static void main(String args[]) {
 
         // buenos dias,son las 19:49 del dia 19 septiembre
@@ -12,22 +14,23 @@ public class HolaMundo {
 
         System.out.println(numero);
 //declaracion e inicializacion de variables
-       byte importe;//declaracion de byte
-        importe=100;  // asignacion de valor
+        byte importe;//declaracion de byte
+        importe = 100;  // asignacion de valor
         double doble;
-        doble=2;
+        doble = 2;
         short corto;
-        corto=3;
+        corto = 3;
         int entero;
-        entero=4;
+        entero = 4;
         long largo;
-        largo=5;
+        largo = 5;
         float flotante;
-        flotante=6;
+        flotante = 6;
         char caracter;
-        caracter=7;
+        caracter = 7;
         boolean logico;
-        logico=true;
+        logico = true;
 
     }
 }
+
