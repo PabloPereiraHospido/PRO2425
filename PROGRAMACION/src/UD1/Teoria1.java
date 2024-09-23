@@ -31,6 +31,9 @@ public class Teoria1 {
         boolean logico;
         logico = true;
 
+        //dia 23 de septiembre
+        System.out.println("Hola Mundo\n");
+        System.out.println("\tivan me dijo \"ya pensaba que llegaba tade\"");
     }
 }
 
