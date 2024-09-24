@@ -39,22 +39,34 @@ public class Boletin1 {
 
         // ejercicio 4
 
+        char letraA='a';
+                System.out.println((int)letraA);
+          char letraB='z';
+        System.out.println((int)letraB);
+
+        int z=122;
+                int a=97;
+                        int total;
+                                total=z-a;
+                                System.out.println("total=" +total);
+
 
 // ejercicio 5
 
-        int a = 5;    // declaracion de la primera variable
-        int b = 10;   // declaracion de la segunda variable
+        int d = 5;    // declaracion de la primera variable
+        int f = 10;   // declaracion de la segunda variable
         int c;        // declaracion de una tercera variable sin ningun valor asignado
 
-        c = a;       // el valor de la variable es c=a
-        a = b;       // el valor de la variable es a=c
-        b = c;       // el valor de la variable es b=c
+        c = d;       // el valor de la variable es c=d
+        d = f;       // el valor de la variable es d=c
+        f = c;       // el valor de la variable es f=c
 
-        System.out.println("a=" + a);
-        System.out.println("b=" + b);
+        System.out.println("d=" + d);
+        System.out.println("f=" + f);
 
 // ejercicio 6
 
+                
 
     }
 }
