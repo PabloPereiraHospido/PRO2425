@@ -1,9 +1,13 @@
 package UD1;
 
 public class Boletin1 {
-    //ejercicio 1
-    /*línea 1 es el paquete en el que se estructura el código
-    línea tres inicio de comentario de bloque
+    public static void main(String args[]) {
+
+        // ejercicio 1
+
+    /*
+    línea 1 es el paquete en el que se estructura el código
+    línea 3 inicio de comentario detectado por javadoc para hacer la documentacion del proyecto
     línea 7 clase pública del .java
     línea 9 definición de un elemento estático
     línea 10 declaración de constante
@@ -12,26 +16,45 @@ public class Boletin1 {
     línea 22 comentario en linea explicativo del código
      */
 
-    //ejercicio 2
+        //ejercicio 2
 
    /*
-   MARIA no es válido ya que no sigue las convenciones de escritura camel case
    María no es válido por el acento
-   Salto_Mortal no es válido debido a la barra baja
+   Salto_Mortal no es válido debido al subrayado
    "datos" no es válido ya que empieza por comillas
    sueldo bruto no es válido debido al espacio
-   saltomortal no es valido ya que no respeta las convenciones de escritura high camel case
-   cu_1 no es válido por la barra baja
+   cu_1 no es válido por el subrayado
    58 no es válido ya que comienza por un dígito
-   salto-mortal no es valido por la barra
-   if no es valido ya que es una palabra reservada del sistema
-   _&aprecio no es válido al empezar por la barra
+   salto-mortal no es valido por el guion
+   if no es valido ya que es una palabra reservada del sistema java
    año no es válido por la ñ
     */
-    // ejercicio 3
+
+        // ejercicio 3
 
     /*
-    
+    en el apartado a asigna el valor de la variable a se asigna a una vaiable llamada b y el segundo asigna el caracter "b" a la variable a
+    en el partado b se asigna el valor de la variable 7 a la a, y en el segundo se asigna el numero 7 a la variable a
      */
 
+        // ejercicio 4
+
+
+// ejercicio 5
+
+        int a = 5;    // declaracion de la primera variable
+        int b = 10;   // declaracion de la segunda variable
+        int c;        // declaracion de una tercera variable sin ningun valor asignado
+
+        c = a;       // el valor de la variable es c=a
+        a = b;       // el valor de la variable es a=c
+        b = c;       // el valor de la variable es b=c
+
+        System.out.println("a=" + a);
+        System.out.println("b=" + b);
+
+// ejercicio 6
+
+
+    }
 }
