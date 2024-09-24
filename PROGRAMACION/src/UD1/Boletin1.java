@@ -65,15 +65,16 @@ public class Boletin1 {
         System.out.println("f=" + f);
         ejSeis();
     }
-// ejercicio 6
-        static void ejSeis(){
-            char foo;
-            foo='e';
-            System.out.println("la variable foo almacena la letra"+foo);
-            char letraE='e';
-            foo=letraE;
-            System.out.println("la variable foo continua almacenando la letra"+foo);
-            foo='\u0065';
-            System.out.println("la variable foo continua almacenando la letra"+foo);
+
+    // ejercicio 6
+    static void ejSeis() {
+        char xocas;
+        xocas = 'e';
+        System.out.println("la variable xocas almacena la letra" + xocas);
+        char letraE = 'e';
+        xocas = letraE;
+        System.out.println("la variable xocas continua almacenando la letra" + xocas);
+        xocas = '\u0065';
+        System.out.println("la variable xocas continua almacenando la letra" + xocas);
     }
 }
