@@ -39,16 +39,16 @@ public class Boletin1 {
 
         // ejercicio 4
 
-        char letraA='a';
-                System.out.println((int)letraA);
-          char letraB='z';
-        System.out.println((int)letraB);
+        char letraA = 'a';
+        System.out.println((int) letraA);
+        char letraB = 'z';
+        System.out.println((int) letraB);
 
-        int z=122;
-                int a=97;
-                        int total;
-                                total=z-a;
-                                System.out.println("total=" +total);
+        int z = 122;
+        int a = 97;
+        int total;
+        total = z - a;
+        System.out.println("total=" + total);
 
 
 // ejercicio 5
@@ -63,10 +63,17 @@ public class Boletin1 {
 
         System.out.println("d=" + d);
         System.out.println("f=" + f);
-
+        ejSeis();
+    }
 // ejercicio 6
-
-                
-
+        static void ejSeis(){
+            char foo;
+            foo='e';
+            System.out.println("la variable foo almacena la letra"+foo);
+            char letraE='e';
+            foo=letraE;
+            System.out.println("la variable foo continua almacenando la letra"+foo);
+            foo='\u0065';
+            System.out.println("la variable foo continua almacenando la letra"+foo);
     }
 }
