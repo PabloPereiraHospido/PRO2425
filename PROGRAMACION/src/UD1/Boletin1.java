@@ -63,13 +63,8 @@ public class Boletin1 {
 
         System.out.println("d=" + d);
         System.out.println("f=" + f);
+
         //ejercicio 6
-
-        ejSeis();
-    }
-
-
-    static void ejSeis() {
 
         char xocas;
         xocas = 'e';
@@ -79,5 +74,69 @@ public class Boletin1 {
         System.out.println("la variable xocas sigue almacenando la letra\t" + xocas);
         xocas = '\u0065';
         System.out.println("la variable xocas sigue almacenando la letra\t" + xocas);
+
+        //ejercicio 7
+
+        int i1 = 10;
+        int i2 = 3;
+        double d1 = 12.5;
+        double d2 = 2.0;
+
+        System.out.println(i1 / i2);
+        System.out.println(i1 & i2);
+        System.out.println(d1 / d2);
+        System.out.println(d1 % d2);
+        System.out.println(d1 / i2);
+        System.out.println(d1 % i2);
+
+        //ejercicio 8
+
+        int q = 2;
+        int n = 10;
+
+        System.out.println(q = ++n * 3);
+        System.out.println(q = n++ * 3);
+
+        //ejercicio 9
+
+        System.out.println(-6 * 7 + 2 * 3 / 4 - 8);
+        System.out.println(((3 + 2) % 2 - 15) / 2 * 5);
+        System.out.println(3 + 6 * 14 % 3);
+        System.out.println(8 + 7 * 3 + 4 * 6 / 2 % 4);
+
+        //ejercicio 10
+
+        double x = 1;
+        double y = 4;
+        double u = 10;
+        final double pi = 3.1416;
+
+        System.out.println(2 * x + 0.5 + y - 1 / 5 * u);
+        System.out.println(4 / y + pi * x / u);
+        System.out.println(y - 2 / u + 4 * y / 2);
+
+        //ejecricio 11
+
+        int p = 50;
+
+        System.out.println(p *= +8);
+
+        byte variableByte;
+
+        variableByte = (byte) p; // haciendo el casting
+
+        System.out.println(variableByte);  // el numero no coincide ya que el byte no puede contener todo el nunero
+
+
+        /* ejercicio 12
+
+        funciona correctamente ya que te retorna el mismo valor
+
+         */
+
+        //ejercicio 13
+
+
+
     }
 }
