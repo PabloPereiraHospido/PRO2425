@@ -63,18 +63,21 @@ public class Boletin1 {
 
         System.out.println("d=" + d);
         System.out.println("f=" + f);
+        //ejercicio 6
+
         ejSeis();
     }
 
-    // ejercicio 6
+
     static void ejSeis() {
+
         char xocas;
         xocas = 'e';
-        System.out.println("la variable xocas almacena la letra" + xocas);
+        System.out.println("la variable xocas almacena la letra\t" + xocas);
         char letraE = 'e';
         xocas = letraE;
-        System.out.println("la variable xocas continua almacenando la letra" + xocas);
+        System.out.println("la variable xocas sigue almacenando la letra\t" + xocas);
         xocas = '\u0065';
-        System.out.println("la variable xocas continua almacenando la letra" + xocas);
+        System.out.println("la variable xocas sigue almacenando la letra\t" + xocas);
     }
 }
