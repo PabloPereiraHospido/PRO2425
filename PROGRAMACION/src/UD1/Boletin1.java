@@ -128,15 +128,18 @@ public class Boletin1 {
         System.out.println(variableByte);  // el numero no coincide ya que el byte no puede contener todo el nunero
 
 
-        /* ejercicio 12
+        // ejercicio 12
 
-        funciona correctamente ya que te retorna el mismo valor
-
-         */
+        int miInt = 9;
+        double miDoble = miInt;
+        System.out.println(miDoble);
+        System.out.println(miInt);
+//funciona porque a un int le puedes meter un double
 
         //ejercicio 13
-
-
-
+        double miDoble2 = 9.78d;
+        int mInt = (int) miDoble2;
+        System.out.println(miDoble2);
+        System.out.println(miInt);
     }
 }
