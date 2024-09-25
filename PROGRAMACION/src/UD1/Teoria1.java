@@ -1,5 +1,7 @@
 package UD1;
 
+import java.security.spec.RSAOtherPrimeInfo;
+
 public class Teoria1 {
     public static void main(String args[]) {
 
@@ -34,6 +36,28 @@ public class Teoria1 {
         //dia 23 de septiembre
         System.out.println("Hola Mundo\n");
         System.out.println("\tivan me dijo \"ya pensaba que llegaba tade\"");
+
+        //dia 25 de septiembre
+
+        int i = 0;
+
+        System.out.println(i);
+        System.out.println(++i);
+        System.out.println(i);
+        System.out.println(i--);
+        System.out.println(i);
+        System.out.println(--i);
+
+        i=10;
+        i+=1;
+        System.out.println(i);
+
+        System.out.println(true);
+        System.out.println(false);
+        System.out.println(true && false);
+        System.out.println(true||false);
+
+
     }
 }
 
