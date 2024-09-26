@@ -48,14 +48,43 @@ public class Teoria1 {
         System.out.println(i);
         System.out.println(--i);
 
-        i=10;
-        i+=1;
+        i = 10;
+        i += 1;
         System.out.println(i);
 
         System.out.println(true);
         System.out.println(false);
         System.out.println(true && false);
-        System.out.println(true||false);
+        System.out.println(true || false);
+
+        //jueves 26 de septiembre
+
+        int ii = 100;
+        long ll = ii;
+        float ff = ll;
+        System.out.println("valor de int" + ii);
+        System.out.println("valor de long" + ll);
+        System.out.println("vaLor de float" + ff);
+
+        //Cadenas
+        System.out.println("vaLor de float" + ff+ "y el valor de long es" +ll);
+
+        int num1=5;
+        int num2=7;
+        System.out.println("la suma de"+num1+num2);
+        System.out.println("la suma de"+(num1+num2));
+        System.out.println(num1+num2+ "la suma de");
+
+        int aa=50;
+        byte bb=(byte) aa;  // casting se pone entre parentesis la el tipo al que lo queremos pasar
+
+        double ddd=100.04;
+                long lll= (long)ddd;
+                int iii= (int) lll;
+
+        System.out.println("valor double"+ ddd);
+        System.out.println("valor long" + lll);
+        System.out.println("valor int"+ iii);
 
 
     }
