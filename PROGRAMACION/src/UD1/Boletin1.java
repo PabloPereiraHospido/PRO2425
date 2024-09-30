@@ -143,8 +143,40 @@ public class Boletin1 {
         System.out.println(miDoble2);
         System.out.println(miInt);
 
+        //ejercicio 14
+
+        int segundos;
+        int minutos;
+        int horas;
+
+        //ejercicio 17
+
+        int nn=10,yy=4, v=2;
+        double k;
+
+        k=nn/yy;
+        k=(double)nn/yy;
+        k=(double)(nn/yy);
+        k+=nn;
+        v*=k;
+        k+=2;
+        System.out.println(k);
+
+        //ejercicio 18
+
+        int r=5, rr=10, rrr=9, rrrr=8;
+int uu, eee ,iii,qqq, ooo ;
+      uu= r+rr+rrr+rrrr;
+ooo=r*100;
+eee=rr/3;
+iii=eee/rrrr;
+qqq=iii/rr;
+        System.out.println("primera oeracion" +uu);
+        System.out.println("segunda operacion"+ooo);
+        System.out.println("tercera operacion"+eee);
+        System.out.println("cuarta operacion"+iii);
+        System.out.println("quinta operacion"+qqq);
 
 
-        
     }
 }
