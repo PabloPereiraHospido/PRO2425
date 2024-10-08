@@ -277,14 +277,14 @@ public class Boletin1 {
         Scanner scanner = new Scanner(System.in);
 
         // Declarar las variables para los tres números
-        int num1=1, num2=2, num3=3;
+        int num1, num2, num3;
 
         // Solicitar al usuario que ingrese los tres números
         System.out.print("Introduce el primer número entero: ");
         num1 = scanner.nextInt();
 
         System.out.print("Introduce el segundo número entero: ");
-        num2 = scanner.nextInt(2);
+        num2 = scanner.nextInt();
 
         System.out.print("Introduce el tercer número entero: ");
         num3 = scanner.nextInt();
