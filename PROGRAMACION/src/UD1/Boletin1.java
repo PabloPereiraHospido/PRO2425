@@ -1,5 +1,7 @@
 package UD1;
 
+import java.util.Scanner;
+
 public class Boletin1 {
     public static void main(String args[]) {
 
@@ -145,9 +147,59 @@ public class Boletin1 {
 
         //ejercicio 14
 
-        int segundos;
-        int minutos;
-        int horas;
+        // Total de segundos a convertir
+        int totalSegundos = 86455;
+
+        // Definimos las constantes para las conversiones
+        int segundosEnUnMinuto = 60;
+        int minutosEnUnaHora = 60;
+        int horasEnUnDia = 24;
+
+        // Cálculos
+        int segundosRestantes = totalSegundos;
+
+        int dias = segundosRestantes / (segundosEnUnMinuto * minutosEnUnaHora * horasEnUnDia);
+        segundosRestantes %= (segundosEnUnMinuto * minutosEnUnaHora * horasEnUnDia);
+
+        int horas = segundosRestantes / (segundosEnUnMinuto * minutosEnUnaHora);
+        segundosRestantes %= (segundosEnUnMinuto * minutosEnUnaHora);
+
+        int minutos = segundosRestantes / segundosEnUnMinuto;
+        int segundos = segundosRestantes % segundosEnUnMinuto;
+
+        // Imprimir el resultado
+        System.out.println(totalSegundos + " segundos son:");
+        System.out.println(dias + " días");
+        System.out.println(horas + " horas");
+        System.out.println(minutos + " minutos");
+        System.out.println(segundos + " segundos");
+
+        //ejercicio 15
+        // Declarar e inicializar una variable entera con un número de cuatro cifras
+        int numero = 4321;
+
+        // Calcular los componentes
+        int millares = numero / 1000;
+        int centenas = (numero % 1000) / 100;
+        int decenas = (numero % 100) / 10;
+        int unidades = numero % 10;
+
+        // Imprimir el desglose
+        System.out.println(millares + " millares.");
+        System.out.println(centenas + " centenas.");
+        System.out.println(decenas + " decenas.");
+        System.out.println(unidades + " unidades.");
+
+        //ejercicio 16
+
+        // Declarar e inicializar la variable contador
+        int contador = 8; // Puedes cambiar este valor inicial para probar
+
+        // Incrementar el contador de forma circular en una única instrucción
+        contador = (contador + 1) % 10;
+
+        // Imprimir el resultado
+        System.out.println("El valor del contador es: " + contador);
 
         //ejercicio 17
 
@@ -164,20 +216,136 @@ public class Boletin1 {
 
         //ejercicio 18
 
-        int r=5, rr=10, rrr=9, rrrr=8;
-int uu, eee ,iii,qqq, ooo ;
-      uu= r+rr+rrr+rrrr;
-ooo=r*100;
-eee=rr/3;
-iii=eee/rrrr;
-qqq=iii/rr;
-        System.out.println("primera oeracion" +uu);
-        System.out.println("segunda operacion"+ooo);
-        System.out.println("tercera operacion"+eee);
-        System.out.println("cuarta operacion"+iii);
-        System.out.println("quinta operacion"+qqq);
+        // Declarar e inicializar cuatro variables de tipo int
+        int var1 = 10;  // Puedes cambiar estos valores
+        int var2 = 25;
+        int var3 = 40;
+        int var4 = 5;
 
+        // a) La suma de las cuatro variables
+        int suma = var1 + var2 + var3 + var4;
 
+        // b) El producto de la primera variable por 100
+        int producto = var1 * 100;
+
+        // c) La división real de la segunda por tres
+        double divisionReal = (double) var2 / 3;
+
+        // d) La parte entera de la división de la tercera variable dividida por la cuarta
+        int parteEntera = var3 / var4;
+
+        // e) El resto de la división de la primera entre la segunda variable
+        int resto = var1 % var2;
+
+        // Imprimir los resultados
+        System.out.println("Suma: " + suma);
+        System.out.println("Producto de var1 por 100: " + producto);
+        System.out.println("División real de var2 por 3: " + divisionReal);
+        System.out.println("Parte entera de var3 dividido por var4: " + parteEntera);
+        System.out.println("Resto de var1 dividido por var2: " + resto);
+
+        //ejercicio 19
+        // Declarar e inicializar cuatro variables de tipo double
+        double var11 = 10.5;  // Puedes cambiar estos valores
+        double var22 = 25.0;
+        double var33 = 40.0;
+        double var44 = 5.0;
+
+        // a) La suma de las cuatro variables
+        double sumadouble = var11 + var22 + var33 + var44;
+
+        // b) El producto de la primera variable por 100
+        double producto2 = var11 * 100;
+
+        // c) La división real de la segunda por tres
+        double divisionReal2 = var22 / 3;
+
+        // d) La parte entera de la división de la tercera variable dividida por la cuarta
+        double parteEntera2 = Math.floor(var33 / var44); // Usamos Math.floor para obtener la parte entera
+
+        // e) El resto de la división de la primera entre la segunda variable
+        double resto2 = var11 % var22;
+
+        // Imprimir los resultados
+        System.out.println("Suma: " + suma);
+        System.out.println("Producto de var1 por 100: " + producto);
+        System.out.println("División real de var2 por 3: " + divisionReal);
+        System.out.println("Parte entera de var3 dividido por var4: " + parteEntera);
+        System.out.println("Resto de var1 dividido por var2: " + resto);
+//ejercicio 20
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Declarar las variables para los tres números
+        int num1=1, num2=2, num3=3;
+
+        // Solicitar al usuario que ingrese los tres números
+        System.out.print("Introduce el primer número entero: ");
+        num1 = scanner.nextInt();
+
+        System.out.print("Introduce el segundo número entero: ");
+        num2 = scanner.nextInt(2);
+
+        System.out.print("Introduce el tercer número entero: ");
+        num3 = scanner.nextInt();
+
+        // Calcular la media real
+        double media = (num1 + num2 + num3) / 3.0;
+
+        // Imprimir el resultado
+        System.out.println("La media de los tres números es: " + media);
+
+        //ejercicio 21
+        Scanner scanner2 = new Scanner(System.in);
+
+        // Declarar las variables para los tres números reales
+        double num111, num222, num333;
+
+        // Solicitar al usuario que ingrese los tres números reales
+        System.out.print("Introduce el primer número real: ");
+        num111 = scanner.nextDouble();
+
+        System.out.print("Introduce el segundo número real: ");
+        num222 = scanner.nextDouble();
+
+        System.out.print("Introduce el tercer número real: ");
+        num333 = scanner.nextDouble();
+
+        // Calcular la media
+        double media2 = (num111 + num222 + num333) / 3;
+
+        // Imprimir el resultado
+        System.out.println("La media de los tres números es: " + media);
+
+        // Cerrar el scanner
+        scanner.close();
+
+        //ejercicio 22
+        // Declarar e inicializar la longitud del lado
+        double lado = 0.5;
+
+        // Calcular el área
+        double area = lado * lado;
+
+        // Calcular el perímetro
+        double perimetro = 4 * lado;
+
+        // Imprimir los resultados
+        System.out.println("Lado del cuadrado: " + lado + " cm");
+        System.out.println("Área del cuadrado: " + area + " cm²");
+        System.out.println("Perímetro del cuadrado: " + perimetro + " cm");
+
+        //ejercicio 23
+        // Monto inicial y tasa de interés
+        double montoInicial = 5000.0; // en euros
+        double tasaInteres = 0.06; // 6% de interés anual
+
+        // Calcular el monto total después de un año
+        double montoFinal = montoInicial * (1 + tasaInteres);
+
+        // Imprimir el resultado
+        System.out.println("Dinero después de un año: " + montoFinal + " €");
+    }
 
     }
-}
+
