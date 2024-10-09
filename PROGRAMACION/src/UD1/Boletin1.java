@@ -315,7 +315,7 @@ public class Boletin1 {
         double media2 = (num111 + num222 + num333) / 3;
 
         // Imprimir el resultado
-        System.out.println("La media de los tres números es: " + media);
+        System.out.println("La media de los tres números es: " + media2);
 
         // Cerrar el scanner
         scanner.close();
