@@ -203,15 +203,15 @@ public class Boletin1 {
 
         //ejercicio 17
 
-        int nn=10,yy=4, v=2;
+        int nn = 10, yy = 4, v = 2;
         double k;
 
-        k=nn/yy;
-        k=(double)nn/yy;
-        k=(double)(nn/yy);
-        k+=nn;
-        v*=k;
-        k+=2;
+        k = nn / yy;
+        k = (double) nn / yy;
+        k = (double) (nn / yy);
+        k += nn;
+        v *= k;
+        k += 2;
         System.out.println(k);
 
         //ejercicio 18
@@ -347,5 +347,5 @@ public class Boletin1 {
         System.out.println("Dinero después de un año: " + montoFinal + " €");
     }
 
-    }
+}
 
