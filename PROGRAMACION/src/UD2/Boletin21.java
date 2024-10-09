@@ -53,7 +53,6 @@ unido por un or y es verdadera, la expresion es verdadera
 
 por otro lado, el sgundo enunciado es falso por que todas sus condiciones son falsas
  */
-
-
+        
     }
 }
