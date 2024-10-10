@@ -12,10 +12,8 @@ public class Boletin22 {
 
             System.out.println("nota correcta,es un suspenso");
         } else {
-            if (valores < 5) {
-
-
-                System.out.println("nota correcta,estas aprobado");
+            if (valores >= 5) {
+                System.out.println("nota correcta, estas aprobado");
             } else {
                 if (valores >= 11) {
                     System.out.println("el valor introducido no es correcto");
@@ -23,6 +21,6 @@ public class Boletin22 {
             }
         }
 //ejercicio 3
-        
+
     }
 }
