@@ -23,9 +23,6 @@ public class Boletin22 {
             }
         }
 //ejercicio 3
-        Scanner scanner1 = new Scanner (System.in);
-        System.out.println("introduce un numero entero");
-        int numero= scanner1.nextInt();
-        if {
+        
     }
 }
