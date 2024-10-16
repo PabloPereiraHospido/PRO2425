@@ -55,5 +55,31 @@ public class Teoria2 {
                 }
             }
         }
+        //practica del dia 16 de octubre
+        int dia= 1;
+        if (dia == 1) {
+            System.out.println("Lunes");
+        } else {
+            if (dia == 2) {
+                System.out.println("martes");
+            } else {
+                if (dia == 3) {
+                    System.out.println("Miercoles");
+                } else {
+                    if (dia == 4) {
+                        System.out.println("Jueves");
+                    } else {
+                        if (dia == 5) {
+                            System.out.println("Viernes");
+                        } else {
+                            if (dia >= 6) {
+                                System.out.println("Fin de semana");
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
