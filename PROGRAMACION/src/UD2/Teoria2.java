@@ -56,30 +56,63 @@ public class Teoria2 {
             }
         }
         //practica del dia 16 de octubre
-        int dia= 1;
+        int dia = 1;
         if (dia == 1) {
             System.out.println("Lunes");
-        } else {
-            if (dia == 2) {
-                System.out.println("martes");
-            } else {
-                if (dia == 3) {
-                    System.out.println("Miercoles");
-                } else {
-                    if (dia == 4) {
-                        System.out.println("Jueves");
-                    } else {
-                        if (dia == 5) {
-                            System.out.println("Viernes");
-                        } else {
-                            if (dia >= 6) {
-                                System.out.println("Fin de semana");
 
-                            }
-                        }
-                    }
-                }
-            }
+        } else if (dia == 2) {
+            System.out.println("Martes");
+
+        } else if (dia == 3) {
+            System.out.println("Miercoles");
+
+
+        } else if (dia == 4) {
+            System.out.println("Jueves");
+
+        } else if (dia == 5) {
+            System.out.println("Viernes");
+
+
+        } else if (dia >= 6) {
+            System.out.println("Fin de semana");
         }
+
+
+        switch (dia) {
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miercoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            default:
+                System.out.println("Fin de semana");
+                break;
+        }
+        int valor = 2;
+        switch (valor) {
+            case 2:
+            case 4:
+            case 6:
+            case 8:
+            case 10:
+                System.out.println("Es par");
+                break;
+            default:
+                System.out.println("Es impar");
+                break;
+        }
+
+
     }
 }
