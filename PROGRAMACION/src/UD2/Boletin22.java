@@ -87,7 +87,82 @@ public class Boletin22 {
         System.out.println("El importe final a pagar es: $" + importeFinal);
 
         //ejercicio 5
+        int salario;
+        salario = 100;
 
+        //ejercicio 8
+        int meses;
+        meses = 1;
+        switch (meses) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                System.out.println("tiene 31 dias");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                System.out.println("tiene 30 dias");
+                break;
 
+            case 2:
+                System.out.println("tiene 28 dias");
+                break;
+        }
+        //ejercicio 9
+        int ano, aa, bb, cc, d, e, f;
+        ano = 12;
+        aa = 0;
+        bb = 1;
+        cc = 4;
+        d = 6;
+        e = 11;
+        f = 31;
+
+        if (aa == ano % 19) {
+
+        } else if (bb == ano % 4) {
+
+        } else if (cc == ano % 7) {
+
+        } else if (d == (19 * aa + 24) % 30) {
+
+        } else if (e == (2 * bb + 4 * cc + 6 * d + 5) % 7) {
+
+        } else if (f == (22 + d + e)) {
+
+        }
+
+        //ejercicio 15
+        int a, b, c;
+        a = 0;
+        b = 2;
+        c = 1;
+
+        if (a == 0) {
+
+            System.out.println("Solucion = " + ((double) (-c / b)));
+        } else {
+            double x1, x2;
+            int discriminante = b * b - 4 * a * c;
+            if (discriminante >= 0) {
+                x1 = (-b + Math.sqrt(discriminante) / (2 * a));
+                x2 = (-b - Math.sqrt(discriminante) / (2 * a));
+            } else {
+                double parteReal;
+                parteReal = -b / (2 * a);
+                x1 = Math.sqrt(discriminante * -1) / 2 * a;
+                x2 = x1 * -1;
+                System.out.println(parteReal);
+                System.out.println(x1);
+                System.out.println(x2);
+            }
+
+        }
     }
 }
