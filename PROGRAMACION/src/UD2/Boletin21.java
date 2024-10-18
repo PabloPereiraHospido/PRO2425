@@ -103,7 +103,7 @@ por otro lado, el sgundo enunciado es falso por que todas sus condiciones son fa
             System.out.println("El elemento está dentro de la matriz.");
         } else {
             System.out.println("El elemento está fuera de la matriz.");
-        }
+        }  scanner.close();
 
 
         //ejercicio 5
@@ -122,8 +122,7 @@ por otro lado, el sgundo enunciado es falso por que todas sus condiciones son fa
             System.out.println("La opción " + opcion + " es válida.");
         } else {
             System.out.println("La opción " + opcion + " no es válida.");
-        }
-
+        }  scanner2.close();
         //ejercicio 6
         // Notas de las tres unidades didácticas
         double nota1 = 6.0;

@@ -18,7 +18,7 @@ public class Boletin22 {
                 if (valores >= 11) {
                     System.out.println("el valor introducido no es correcto");
                 }
-            }
+            }  scanner.close();
         }
 //ejercicio 3
 
@@ -45,7 +45,7 @@ public class Boletin22 {
             default:
                 System.out.println(0);
                 break;
-        }
+        } scanner2.close();
         //ejercicio 4
         Scanner scanner3 = new Scanner(System.in);
 
@@ -69,7 +69,7 @@ public class Boletin22 {
             descuento = 0.10;
         } else {
             descuento = 0.0;
-        }
+        }  scanner3.close();
 
         // Calcular el importe total sin descuento
         double importeTotal = cantidad * precioUnitario;
