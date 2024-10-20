@@ -137,6 +137,165 @@ public class Boletin22 {
         } else if (f == (22 + d + e)) {
 
         }
+        //ejercicio 10
+
+        Scanner scanner5 = new Scanner(System.in);
+
+        // Pedir el año al usuario
+        System.out.print("Ingresa un año: ");
+        int anio = scanner.nextInt();
+
+        // Comprobar si el año es bisiesto
+        boolean esBisiesto = false;
+
+        if (anio % 4 == 0) {
+            if (anio % 100 == 0) {
+                if (anio % 400 == 0) {
+                    esBisiesto = true; // Múltiplo de 400, es bisiesto
+                }
+            } else {
+                esBisiesto = true; // Múltiplo de 4, pero no de 100, es bisiesto
+            }
+        }
+
+        // Mostrar el resultado
+        if (esBisiesto) {
+            System.out.println(ano + " es un año bisiesto.");
+        } else {
+            System.out.println(ano + " no es un año bisiesto.");
+        } Scanner scanner4 = new Scanner(System.in);
+
+        // Pedir el año al usuario
+        System.out.print("Ingresa un año: ");
+        int ano1 = scanner.nextInt();
+
+        // Comprobar si el año es bisiesto
+        boolean esBisiesto1 = false;
+
+        if (ano1 % 4 == 0) {
+            if (ano1 % 100 == 0) {
+                if (ano1 % 400 == 0) {
+                    esBisiesto1 = true; // Múltiplo de 400, es bisiesto
+                }
+            } else {
+                esBisiesto1 = true; // Múltiplo de 4, pero no de 100, es bisiesto
+            }
+        }
+
+        // Mostrar el resultado
+        if (esBisiesto1) {
+            System.out.println(anio + " es un año bisiesto.");
+        } else {
+            System.out.println(anio + " no es un año bisiesto.");
+        }
+
+
+        //ejercicio 11
+
+        Scanner scanner6 = new Scanner(System.in);
+
+        // Pedir los tres enteros
+        System.out.print("Ingresa el primer número: ");
+        int num1 = scanner6.nextInt();
+        System.out.print("Ingresa el segundo número: ");
+        int num2 = scanner6.nextInt();
+        System.out.print("Ingresa el tercer número: ");
+        int num3 = scanner6.nextInt();
+
+        // Determinar cuál es el mayor
+        int mayor;
+        if (num1 > num2 && num1 > num3) {
+            mayor = num1;
+        } else if (num2 > num1 && num2 > num3) {
+            mayor = num2;
+        } else {
+            mayor = num3;
+        }
+
+        // Mostrar el mayor número
+        System.out.println("El mayor número es: " + mayor);
+
+       //ejercicio 12
+
+        Scanner scanner8 = new Scanner(System.in);
+
+        // Pedir la distancia recorrida al usuario
+        System.out.print("Ingresa la distancia recorrida en km: ");
+        double kmRecorridos = scanner8.nextDouble();
+
+        // Inicializar la cantidad fija
+        double totalFactura = 30.0;
+
+        // Calcular el monto según la distancia recorrida
+        if (kmRecorridos <= 300) {
+            // Si no se rebasan los 300 km, solo se cobra la cantidad fija de 30€
+            totalFactura = 30.0;
+        } else if (kmRecorridos <= 1000) {
+            // Si la distancia es mayor de 300 km pero menor o igual de 1000 km
+            totalFactura += (kmRecorridos - 300) * 0.20;
+        } else {
+            // Si la distancia es mayor de 1000 km
+            totalFactura += (1000 - 300) * 0.20; // Para los primeros 700 km (de 300 a 1000)
+            totalFactura += (kmRecorridos - 1000) * 0.15; // Para los km mayores de 1000
+        }
+
+        // Mostrar el total de la factura
+        System.out.println("El total de la factura es: " + totalFactura + "€");
+
+        //ejercicio 13
+
+        Scanner scanner9 = new Scanner(System.in);
+
+        // Pedir el número de serie al usuario
+        System.out.print("Ingresa el número de serie del producto: ");
+        int numeroSerie = scanner9.nextInt();
+
+        // Verificar si el número de serie está en los rangos defectuosos
+        boolean esDefectuoso = (numeroSerie >= 14681 && numeroSerie <= 15681) ||
+                (numeroSerie >= 70001 && numeroSerie <= 79999) ||
+                (numeroSerie >= 88888 && numeroSerie <= 111111);
+
+        // Mostrar el resultado
+        if (esDefectuoso) {
+            System.out.println("El producto con número de serie " + numeroSerie + " es defectuoso.");
+        } else {
+            System.out.println("El producto con número de serie " + numeroSerie + " NO es defectuoso.");
+        }
+
+        //ejercicio 14
+
+        Scanner scanner0 = new Scanner(System.in);
+
+        // Pedir las cuatro puntuaciones al usuario
+        System.out.print("Ingresa la primera puntuación: ");
+        int punt1 = scanner0.nextInt();
+        System.out.print("Ingresa la segunda puntuación: ");
+        int punt2 = scanner0.nextInt();
+        System.out.print("Ingresa la tercera puntuación: ");
+        int punt3 = scanner0.nextInt();
+        System.out.print("Ingresa la cuarta puntuación: ");
+        int punt4 = scanner0.nextInt();
+
+        // Calcular la media de las puntuaciones
+        double media = (punt1 + punt2 + punt3 + punt4) / 4.0;
+
+        // Determinar la nota según la media
+        char nota;
+        if (media >= 90 && media <= 100) {
+            nota = 'A';
+        } else if (media >= 80 && media <= 89) {
+            nota = 'B';
+        } else if (media >= 70 && media <= 79) {
+            nota = 'C';
+        } else if (media >= 60 && media <= 69) {
+            nota = 'D';
+        } else {
+            nota = 'E';
+        }
+
+        // Mostrar la media y la nota
+        System.out.println("La media de las puntuaciones es: " + media);
+        System.out.println("La nota es: " + nota);
 
         //ejercicio 15
         int a, b, c;
