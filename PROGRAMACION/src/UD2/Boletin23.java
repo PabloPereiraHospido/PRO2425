@@ -36,6 +36,10 @@ public class Boletin23 {
                 break;
             //ejercicio 3
 
+            default:
+                System.out.println("el numero de ejercicio es incorrecto! ");
+                break;
+
         }
     }
 }
