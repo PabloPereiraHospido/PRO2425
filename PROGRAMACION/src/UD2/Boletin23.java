@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Boletin23 {
     public static void main(String[] args) {
-        System.out.println("elige un ejercicio : ");
+        System.out.println("introduce numero de ejercicio : ");
         Scanner in = new Scanner(System.in);
         int ejercicio = in.nextInt();
         switch (ejercicio) {
@@ -35,6 +35,7 @@ public class Boletin23 {
                 scanner.close();
                 break;
             //ejercicio 3
+
 
             default:
                 System.out.println("el numero de ejercicio es incorrecto! ");
