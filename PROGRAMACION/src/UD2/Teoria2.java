@@ -1,5 +1,7 @@
 package UD2;
 
+import java.util.Scanner;
+
 public class Teoria2 {
     public static void main(String[] ars) {
         boolean verdadero = true;
@@ -111,8 +113,32 @@ public class Teoria2 {
             default:
                 System.out.println("Es impar");
                 break;
+
+
         }
+        //dia 24 de octubre
+        for (int i = 0; i < 10; i++) {
+            System.out.println("El numero es: " + i);
+        }
+       /* for (int i = 0; i < 10; i--) {
+            System.out.println("El numero es: " + i);
+        }*/
+        Scanner in = new Scanner(System.in);
+        System.out.print("Número de iteraciones: ");
+        int iteracion = in.nextInt();
+        for (; iteracion > 0; iteracion--) {
 
+        }
+        Scanner in1 = new Scanner(System.in);
+        System.out.print("Número de iteraciones: ");
+        int iteración;
+        for ( iteracion = in1.nextInt();iteracion > 0 ; iteracion--){
 
+        }
     }
+
+
 }
+
+
+
