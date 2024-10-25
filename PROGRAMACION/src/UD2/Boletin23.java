@@ -105,10 +105,25 @@ public class Boletin23 {
 
                 System.out.println("La suma de los " + n7 + " términos es: " + sumaSerie7);
                 break;
-
+            case 8:
+                Scanner scanner8 = new Scanner(System.in);
+                System.out.println("Desde : ");
+                System.out.println("Hasta : ");
+                int Fahrenheit = scanner8.nextInt();
+                int Celsius = 0;
+                int Kelvin = 0;
+                int Rankine = 0;
+                for (int i = 0; i <= Fahrenheit; i++) {
+                    Celsius = (Fahrenheit - 32) * 5 / 9;
+                    Kelvin = Celsius + 273;
+                    Rankine = Fahrenheit + 459;
+                    System.out.println("Fahrenheit: " + Fahrenheit + " Celsius: " + Celsius + " Kelvin: " + Kelvin + " Rankine: " + Rankine);
+                }
+                break;
             default:
                 System.out.println("el numero de ejercicio es incorrecto! ");
                 break;
+
 
         }
     }
