@@ -132,7 +132,12 @@ public class Teoria2 {
         Scanner in1 = new Scanner(System.in);
         System.out.print("Número de iteraciones: ");
         int iteración;
-        for ( iteracion = in1.nextInt();iteracion > 0 ; iteracion--){
+        for (iteracion = in1.nextInt(); iteracion > 0; iteracion--) {
+
+        }
+        int a = 5;
+        while (a < 10) {
+            System.out.println("Prueba");
 
         }
     }
