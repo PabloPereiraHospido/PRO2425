@@ -120,6 +120,41 @@ public class Boletin23 {
                     System.out.println("Fahrenheit: " + Fahrenheit + " Celsius: " + Celsius + " Kelvin: " + Kelvin + " Rankine: " + Rankine);
                 }
                 break;
+            case 9:
+                Scanner scanner9 = new Scanner(System.in);
+                System.out.print("Ingrese un número para calcular su factorial: ");
+                int numFactorial = scanner9.nextInt();
+
+                // a) Calcular el factorial de un número dado
+                long factorial = 1;
+                for (int i = 1; i <= numFactorial; i++) {
+                    factorial *= i;
+                }
+                System.out.println("El factorial de " + numFactorial + " es: " + factorial);
+
+                // b) Calcular el factorial de los primeros 20 números naturales
+                System.out.println("Factoriales de los primeros 20 números naturales:");
+                for (int i = 0; i <= 20; i++) {
+                    long factorial20 = 1;
+                    for (int j = 1; j <= i; j++) {
+                        factorial20 *= j;
+                    }
+                    System.out.println(i + "! = " + factorial20);
+                }
+                break;
+            case 10:
+                Scanner scanner10 = new Scanner(System.in);
+                System.out.print("Ingrese el número de términos: ");
+                int n10 = scanner10.nextInt();
+
+                int term = 1;
+                for (int i = 1; i <= n10; i++) {
+                    System.out.print(term + " ");
+                    term *= -2;
+                }
+                System.out.println();
+                break;
+
             default:
                 System.out.println("el numero de ejercicio es incorrecto! ");
                 break;
@@ -128,3 +163,4 @@ public class Boletin23 {
         }
     }
 }
+
