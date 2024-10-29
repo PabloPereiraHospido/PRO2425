@@ -154,6 +154,37 @@ public class Boletin23 {
                 }
                 System.out.println();
                 break;
+            case 11:
+                Scanner scanner11 = new Scanner(System.in);
+                System.out.print("Ingrese la cantidad de números: ");
+                int cantidad = scanner11.nextInt();
+
+                if (cantidad > 0) {
+                    double suma11 = 0;
+                    double mayor = Double.NEGATIVE_INFINITY;
+                    double menor = Double.POSITIVE_INFINITY;
+
+                    for (int i = 1; i <= cantidad; i++) {
+                        System.out.print("Ingrese el número " + i + ": ");
+                        double numero = scanner11.nextDouble();
+                        suma11 += numero;
+                        if (numero > mayor) {
+                            mayor = numero;
+                        }
+                        if (numero < menor) {
+                            menor = numero;
+                        }
+                    }
+
+                    double media11 = suma11 / cantidad;
+
+                    System.out.println("El mayor número es: " + mayor);
+                    System.out.println("El menor número es: " + menor);
+                    System.out.println("La media de los números es: " + media11);
+                } else {
+                    System.out.println("La cantidad de números debe ser mayor que 0.");
+                }
+                break;
 
             default:
                 System.out.println("el numero de ejercicio es incorrecto! ");
