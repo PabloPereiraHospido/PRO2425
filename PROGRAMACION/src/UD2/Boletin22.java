@@ -49,18 +49,18 @@ public class Boletin22 {
         //ejercicio 4
         Scanner scanner3 = new Scanner(System.in);
 
-        // Solicitar la cantidad de unidades compradas
+
         System.out.print("Ingrese la cantidad de unidades compradas: ");
         int cantidad = scanner3.nextInt();
 
-        // Solicitar el precio del artículo (puede tener decimales)
+
         System.out.print("Ingrese el precio por unidad del artículo: ");
         double precioUnitario = scanner.nextDouble();
 
-        // Definir el descuento
+
         double descuento = 0.0;
 
-        // Aplicar el descuento basado en la cantidad
+
         if (cantidad > 100) {
             descuento = 0.40;
         } else if (cantidad >= 25 && cantidad <= 100) {
@@ -71,13 +71,12 @@ public class Boletin22 {
             descuento = 0.0;
         }  scanner3.close();
 
-        // Calcular el importe total sin descuento
+
         double importeTotal = cantidad * precioUnitario;
 
-        // Calcular el descuento total
+
         double montoDescuento = importeTotal * descuento;
 
-        // Calcular el importe final después de aplicar el descuento
         double importeFinal = importeTotal - montoDescuento;
 
         // Mostrar el descuento aplicado y el importe final
@@ -141,11 +140,10 @@ public class Boletin22 {
 
         Scanner scanner5 = new Scanner(System.in);
 
-        // Pedir el año al usuario
+
         System.out.print("Ingresa un año: ");
         int anio = scanner.nextInt();
 
-        // Comprobar si el año es bisiesto
         boolean esBisiesto = false;
 
         if (anio % 4 == 0) {
@@ -158,18 +156,18 @@ public class Boletin22 {
             }
         }
 
-        // Mostrar el resultado
+
         if (esBisiesto) {
             System.out.println(ano + " es un año bisiesto.");
         } else {
             System.out.println(ano + " no es un año bisiesto.");
         } Scanner scanner4 = new Scanner(System.in);
 
-        // Pedir el año al usuario
+
         System.out.print("Ingresa un año: ");
         int ano1 = scanner.nextInt();
 
-        // Comprobar si el año es bisiesto
+
         boolean esBisiesto1 = false;
 
         if (ano1 % 4 == 0) {
@@ -194,7 +192,7 @@ public class Boletin22 {
 
         Scanner scanner6 = new Scanner(System.in);
 
-        // Pedir los tres enteros
+
         System.out.print("Ingresa el primer número: ");
         int num1 = scanner6.nextInt();
         System.out.print("Ingresa el segundo número: ");
@@ -202,7 +200,7 @@ public class Boletin22 {
         System.out.print("Ingresa el tercer número: ");
         int num3 = scanner6.nextInt();
 
-        // Determinar cuál es el mayor
+
         int mayor;
         if (num1 > num2 && num1 > num3) {
             mayor = num1;
@@ -212,50 +210,49 @@ public class Boletin22 {
             mayor = num3;
         }
 
-        // Mostrar el mayor número
         System.out.println("El mayor número es: " + mayor);
 
        //ejercicio 12
 
         Scanner scanner8 = new Scanner(System.in);
 
-        // Pedir la distancia recorrida al usuario
+
         System.out.print("Ingresa la distancia recorrida en km: ");
         double kmRecorridos = scanner8.nextDouble();
 
-        // Inicializar la cantidad fija
+
         double totalFactura = 30.0;
 
-        // Calcular el monto según la distancia recorrida
+
         if (kmRecorridos <= 300) {
-            // Si no se rebasan los 300 km, solo se cobra la cantidad fija de 30€
+
             totalFactura = 30.0;
         } else if (kmRecorridos <= 1000) {
-            // Si la distancia es mayor de 300 km pero menor o igual de 1000 km
+
             totalFactura += (kmRecorridos - 300) * 0.20;
         } else {
-            // Si la distancia es mayor de 1000 km
+
             totalFactura += (1000 - 300) * 0.20; // Para los primeros 700 km (de 300 a 1000)
             totalFactura += (kmRecorridos - 1000) * 0.15; // Para los km mayores de 1000
         }
 
-        // Mostrar el total de la factura
+
         System.out.println("El total de la factura es: " + totalFactura + "€");
 
         //ejercicio 13
 
         Scanner scanner9 = new Scanner(System.in);
 
-        // Pedir el número de serie al usuario
+
         System.out.print("Ingresa el número de serie del producto: ");
         int numeroSerie = scanner9.nextInt();
 
-        // Verificar si el número de serie está en los rangos defectuosos
+
         boolean esDefectuoso = (numeroSerie >= 14681 && numeroSerie <= 15681) ||
                 (numeroSerie >= 70001 && numeroSerie <= 79999) ||
                 (numeroSerie >= 88888 && numeroSerie <= 111111);
 
-        // Mostrar el resultado
+
         if (esDefectuoso) {
             System.out.println("El producto con número de serie " + numeroSerie + " es defectuoso.");
         } else {
@@ -266,7 +263,7 @@ public class Boletin22 {
 
         Scanner scanner0 = new Scanner(System.in);
 
-        // Pedir las cuatro puntuaciones al usuario
+
         System.out.print("Ingresa la primera puntuación: ");
         int punt1 = scanner0.nextInt();
         System.out.print("Ingresa la segunda puntuación: ");
@@ -276,10 +273,10 @@ public class Boletin22 {
         System.out.print("Ingresa la cuarta puntuación: ");
         int punt4 = scanner0.nextInt();
 
-        // Calcular la media de las puntuaciones
+
         double media = (punt1 + punt2 + punt3 + punt4) / 4.0;
 
-        // Determinar la nota según la media
+
         char nota;
         if (media >= 90 && media <= 100) {
             nota = 'A';
@@ -293,7 +290,7 @@ public class Boletin22 {
             nota = 'E';
         }
 
-        // Mostrar la media y la nota
+
         System.out.println("La media de las puntuaciones es: " + media);
         System.out.println("La nota es: " + nota);
 

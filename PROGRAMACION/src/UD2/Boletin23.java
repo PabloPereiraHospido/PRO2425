@@ -107,32 +107,45 @@ public class Boletin23 {
                 break;
             case 8:
                 Scanner scanner8 = new Scanner(System.in);
+                Scanner scanner81 = new Scanner(System.in);
                 System.out.println("Desde : ");
-                System.out.println("Hasta : ");
                 int Fahrenheit = scanner8.nextInt();
+                System.out.println("Hasta : ");
+                int Fahrenheit1 = scanner81.nextInt();
                 int Celsius = 0;
                 int Kelvin = 0;
                 int Rankine = 0;
-                for (int i = 0; i <= Fahrenheit; i++) {
-                    Celsius = (Fahrenheit - 32) * 5 / 9;
-                    Kelvin = Celsius + 273;
-                    Rankine = Fahrenheit + 459;
-                    System.out.println("Fahrenheit: " + Fahrenheit + " Celsius: " + Celsius + " Kelvin: " + Kelvin + " Rankine: " + Rankine);
+                if (Fahrenheit < Fahrenheit1)
+
+                    for (int i = Fahrenheit; i <= Fahrenheit1; i++) {
+                        Celsius = (i - 32) * 5 / 9;
+                        Kelvin = Celsius + 273;
+                        Rankine = i + 459;
+                        System.out.println("i: " + i + " Celsius: " + Celsius + " Kelvin: " + Kelvin + " Rankine: " + Rankine);
+                    }
+                else if (Fahrenheit > Fahrenheit1) {
+                    for (int i = Fahrenheit1; i <= Fahrenheit; i++) {
+                        Celsius = (i - 32) * 5 / 9;
+                        Kelvin = Celsius + 273;
+                        Rankine = i + 459;
+                        System.out.println("i: " + i + " Celsius: " + Celsius + " Kelvin: " + Kelvin + " Rankine: " + Rankine);
+                    }
+
                 }
+
+
                 break;
             case 9:
                 Scanner scanner9 = new Scanner(System.in);
                 System.out.print("Ingrese un número para calcular su factorial: ");
                 int numFactorial = scanner9.nextInt();
 
-                // a) Calcular el factorial de un número dado
                 long factorial = 1;
                 for (int i = 1; i <= numFactorial; i++) {
                     factorial *= i;
                 }
                 System.out.println("El factorial de " + numFactorial + " es: " + factorial);
 
-                // b) Calcular el factorial de los primeros 20 números naturales
                 System.out.println("Factoriales de los primeros 20 números naturales:");
                 for (int i = 0; i <= 20; i++) {
                     long factorial20 = 1;
@@ -185,7 +198,6 @@ public class Boletin23 {
                     System.out.println("La cantidad de números debe ser mayor que 0.");
                 }
                 break;
-
             default:
                 System.out.println("el numero de ejercicio es incorrecto! ");
                 break;
