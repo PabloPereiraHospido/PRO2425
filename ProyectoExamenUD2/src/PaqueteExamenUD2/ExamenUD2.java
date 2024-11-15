@@ -37,7 +37,6 @@ public class ExamenUD2 {
                 System.out.println("Introduce un numero");
                 Scanner factorial = new Scanner(System.in);
                 int f = factorial.nextInt();
-               
 
                 break;
             case 4:
