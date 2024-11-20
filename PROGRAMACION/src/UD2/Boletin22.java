@@ -4,10 +4,55 @@ import java.util.Scanner;
 
 public class Boletin22 {
     public static void main(String[] ars) {
-        //ejercicio 1 y 2
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("introduce un valor entre 0 y 10 (valores)");
-        int valores = scanner.nextInt();
+        System.out.println("menu de ejercicios, introduce un numero del 1 al 15");
+        Scanner src = new Scanner(System.in);
+        int opciones = src.nextInt();
+        switch (opciones) {
+            case 1:
+                ejercicio1(src);
+                break;
+            case 2:
+                ejercicio2(src);
+                break;
+            case 3:
+                ejercicio3(src);
+                break;
+            case 4:
+                ejercicio4(src);
+                break;
+            case 5:
+                ejercicio5(src);
+                break;
+            case 8:
+                ejercicio8(src);
+                break;
+            case 9:
+                ejercicio9(src);
+                break;
+            case 10:
+                ejercicio10(src);
+                break;
+            case 11:
+                ejercicio11(src);
+                break;
+            case 12:
+                ejercicio12(src);
+                break;
+            case 13:
+                ejercicio13(src);
+                break;
+            case 14:
+                ejercicio14(src);
+                break;
+            case 15:
+                ejercicio15(src);
+                break;
+        }
+    }
+
+    private static void ejercicio1(Scanner src) {
+        System.out.println("introduce un valor entre 0 y 10 ");
+        int valores = src.nextInt();
         if (valores <= 4) {
 
             System.out.println("nota correcta,es un suspenso");
@@ -18,14 +63,38 @@ public class Boletin22 {
                 if (valores >= 11) {
                     System.out.println("el valor introducido no es correcto");
                 }
-            }  scanner.close();
+            }
         }
-//ejercicio 3
+        src.close();
+    }
 
-        Scanner scanner2 = new Scanner(System.in);
+    private static void ejercicio2(Scanner src) {
+
+        System.out.print("Introduce una nota (0 a 10): ");
+
+        try {
+            double nota = src.nextDouble();
+
+            if (nota >= 0 && nota <= 10) {
+                if (nota >= 5) {
+                    System.out.println("La nota es correcta. El alumno ha aprobado.");
+                } else {
+                    System.out.println("La nota es correcta. El alumno ha suspendido.");
+                }
+            } else {
+                System.out.println("La nota no es correcta. Debe estar entre 0 y 10.");
+            }
+        } catch (Exception e) {
+            System.out.println("Entrada no válida. Por favor, introduce un número.");
+        }
+        src.close();
+    }
+
+
+    private static void ejercicio3(Scanner src) {
 
         System.out.println("introduce un numero");
-        int entero = scanner2.nextInt();
+        int entero = src.nextInt();
 
         switch (entero) {
             case 1:
@@ -45,17 +114,18 @@ public class Boletin22 {
             default:
                 System.out.println(0);
                 break;
-        } scanner2.close();
-        //ejercicio 4
-        Scanner scanner3 = new Scanner(System.in);
+        }
+        src.close();
+    }
 
+    private static void ejercicio4(Scanner src) {
 
         System.out.print("Ingrese la cantidad de unidades compradas: ");
-        int cantidad = scanner3.nextInt();
+        int cantidad = src.nextInt();
 
 
         System.out.print("Ingrese el precio por unidad del artículo: ");
-        double precioUnitario = scanner.nextDouble();
+        double precioUnitario = src.nextDouble();
 
 
         double descuento = 0.0;
@@ -69,7 +139,8 @@ public class Boletin22 {
             descuento = 0.10;
         } else {
             descuento = 0.0;
-        }  scanner3.close();
+        }
+        src.close();
 
 
         double importeTotal = cantidad * precioUnitario;
@@ -84,36 +155,49 @@ public class Boletin22 {
         System.out.println("El importe total sin descuento es: $" + importeTotal);
         System.out.println("El monto del descuento es: $" + montoDescuento);
         System.out.println("El importe final a pagar es: $" + importeFinal);
+    }
 
-        //ejercicio 5
+    private static void ejercicio5(Scanner src) {
+
         int salario;
         salario = 100;
+    }
 
-        //ejercicio 8
-        int meses;
-        meses = 1;
-        switch (meses) {
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                System.out.println("tiene 31 dias");
-                break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                System.out.println("tiene 30 dias");
-                break;
+    private static void ejercicio8(Scanner src) {
 
-            case 2:
-                System.out.println("tiene 28 dias");
-                break;
+
+        {
+
+            {
+                int meses;
+                meses = 1;
+                switch (meses) {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12:
+                        System.out.println("tiene 31 dias");
+                        break;
+                    case 4:
+                    case 6:
+                    case 9:
+                    case 11:
+                        System.out.println("tiene 30 dias");
+                        break;
+
+                    case 2:
+                        System.out.println("tiene 28 dias");
+                        break;
+                }
+            }
         }
-        //ejercicio 9
+    }
+
+    private static void ejercicio9(Scanner src) {
+
         int ano, aa, bb, cc, d, e, f;
         ano = 12;
         aa = 0;
@@ -136,13 +220,13 @@ public class Boletin22 {
         } else if (f == (22 + d + e)) {
 
         }
-        //ejercicio 10
+    }
 
-        Scanner scanner5 = new Scanner(System.in);
 
+    private static void ejercicio10(Scanner src) {
 
         System.out.print("Ingresa un año: ");
-        int anio = scanner.nextInt();
+        int anio = src.nextInt();
 
         boolean esBisiesto = false;
 
@@ -158,14 +242,16 @@ public class Boletin22 {
 
 
         if (esBisiesto) {
-            System.out.println(ano + " es un año bisiesto.");
+            System.out.println(anio + " es un año bisiesto.");
         } else {
-            System.out.println(ano + " no es un año bisiesto.");
-        } Scanner scanner4 = new Scanner(System.in);
+            System.out.println(anio + " no es un año bisiesto.");
+        }
+
+        Scanner scanner4 = new Scanner(System.in);
 
 
         System.out.print("Ingresa un año: ");
-        int ano1 = scanner.nextInt();
+        int ano1 = src.nextInt();
 
 
         boolean esBisiesto1 = false;
@@ -186,20 +272,17 @@ public class Boletin22 {
         } else {
             System.out.println(anio + " no es un año bisiesto.");
         }
+    }
 
 
-        //ejercicio 11
-
-        Scanner scanner6 = new Scanner(System.in);
-
+    private static void ejercicio11(Scanner src) {
 
         System.out.print("Ingresa el primer número: ");
-        int num1 = scanner6.nextInt();
+        int num1 = src.nextInt();
         System.out.print("Ingresa el segundo número: ");
-        int num2 = scanner6.nextInt();
+        int num2 = src.nextInt();
         System.out.print("Ingresa el tercer número: ");
-        int num3 = scanner6.nextInt();
-
+        int num3 = src.nextInt();
 
         int mayor;
         if (num1 > num2 && num1 > num3) {
@@ -211,14 +294,13 @@ public class Boletin22 {
         }
 
         System.out.println("El mayor número es: " + mayor);
+    }
 
-       //ejercicio 12
-
-        Scanner scanner8 = new Scanner(System.in);
-
+    private static void ejercicio12(Scanner src) {
 
         System.out.print("Ingresa la distancia recorrida en km: ");
-        double kmRecorridos = scanner8.nextDouble();
+
+        double kmRecorridos = src.nextDouble();
 
 
         double totalFactura = 30.0;
@@ -238,14 +320,13 @@ public class Boletin22 {
 
 
         System.out.println("El total de la factura es: " + totalFactura + "€");
+    }
 
-        //ejercicio 13
+    private static void ejercicio13(Scanner src) {
 
-        Scanner scanner9 = new Scanner(System.in);
+        System.out.println("Ingresa el número de serie del producto: ");
 
-
-        System.out.print("Ingresa el número de serie del producto: ");
-        int numeroSerie = scanner9.nextInt();
+        int numeroSerie = src.nextInt();
 
 
         boolean esDefectuoso = (numeroSerie >= 14681 && numeroSerie <= 15681) ||
@@ -254,24 +335,38 @@ public class Boletin22 {
 
 
         if (esDefectuoso) {
-            System.out.println("El producto con número de serie " + numeroSerie + " es defectuoso.");
+            System.out.
+
+                    println("El producto con número de serie " + numeroSerie + " es defectuoso.");
         } else {
-            System.out.println("El producto con número de serie " + numeroSerie + " NO es defectuoso.");
+            System.out.
+
+                    println("El producto con número de serie " + numeroSerie + " NO es defectuoso.");
         }
+    }
 
-        //ejercicio 14
+    private static void ejercicio14(Scanner src) {
 
-        Scanner scanner0 = new Scanner(System.in);
+        System.out.
 
+                print("Ingresa la primera puntuación: ");
 
-        System.out.print("Ingresa la primera puntuación: ");
-        int punt1 = scanner0.nextInt();
-        System.out.print("Ingresa la segunda puntuación: ");
-        int punt2 = scanner0.nextInt();
-        System.out.print("Ingresa la tercera puntuación: ");
-        int punt3 = scanner0.nextInt();
-        System.out.print("Ingresa la cuarta puntuación: ");
-        int punt4 = scanner0.nextInt();
+        int punt1 = src.nextInt();
+        System.out.
+
+                print("Ingresa la segunda puntuación: ");
+
+        int punt2 = src.nextInt();
+        System.out.
+
+                print("Ingresa la tercera puntuación: ");
+
+        int punt3 = src.nextInt();
+        System.out.
+
+                print("Ingresa la cuarta puntuación: ");
+
+        int punt4 = src.nextInt();
 
 
         double media = (punt1 + punt2 + punt3 + punt4) / 4.0;
@@ -291,10 +386,16 @@ public class Boletin22 {
         }
 
 
-        System.out.println("La media de las puntuaciones es: " + media);
-        System.out.println("La nota es: " + nota);
+        System.out.
 
-        //ejercicio 15
+                println("La media de las puntuaciones es: " + media);
+        System.out.
+
+                println("La nota es: " + nota);
+    }
+
+    private static void ejercicio15(Scanner src) {
+
         int a, b, c;
         a = 0;
         b = 2;
@@ -302,23 +403,38 @@ public class Boletin22 {
 
         if (a == 0) {
 
-            System.out.println("Solucion = " + ((double) (-c / b)));
+            System.out.
+
+                    println("Solucion = " + ((double) (-c / b)));
         } else {
             double x1, x2;
             int discriminante = b * b - 4 * a * c;
             if (discriminante >= 0) {
-                x1 = (-b + Math.sqrt(discriminante) / (2 * a));
-                x2 = (-b - Math.sqrt(discriminante) / (2 * a));
+                x1 = (-b + Math.
+
+                        sqrt(discriminante) / (2 * a));
+                x2 = (-b - Math.
+
+                        sqrt(discriminante) / (2 * a));
             } else {
                 double parteReal;
                 parteReal = -b / (2 * a);
-                x1 = Math.sqrt(discriminante * -1) / 2 * a;
+                x1 = Math.
+
+                        sqrt(discriminante * -1) / 2 * a;
                 x2 = x1 * -1;
-                System.out.println(parteReal);
-                System.out.println(x1);
-                System.out.println(x2);
+                System.out.
+
+                        println(parteReal);
+                System.out.
+
+                        println(x1);
+                System.out.
+
+                        println(x2);
             }
 
         }
     }
 }
+
