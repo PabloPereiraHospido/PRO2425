@@ -9,11 +9,10 @@ public class Boletin3 {
     public static int ejercicio1(int mes, int anho) {
         try {
             YearMonth y = YearMonth.of(anho, mes);
-
             int dias = y.lengthOfMonth();
             return dias;
         } catch (Exception e) {
-            System.out.println("Error: Mes invalido " );
+            System.out.println("Error: Mes invalido ");
 
         }
         return 0;
