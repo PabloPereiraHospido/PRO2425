@@ -58,6 +58,15 @@ public class Teoria3 {
         int resultado = 2 * b;
     }
 
+    public static int factorial(int n) {
+        if (n <= 01) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+
+    }
+
     public static void main(String[] args) {
         for (int valor = 1; valor <= 2; valor++)
             // imprimirTablaMultiplicar(valor);
@@ -70,6 +79,7 @@ public class Teoria3 {
         presentar(a, b);
         presentar();
         presentar(b, a);
+        System.out.println(factorial(5));
     }
 }
 
