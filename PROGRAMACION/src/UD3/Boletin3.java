@@ -183,6 +183,179 @@ public class Boletin3 {
         }
     }
 
+    public static void ejecutarPrograma() {
+        Scanner scanner = new Scanner(System.in);
+        String entrada;
+
+        System.out.println("Introduce una hora en formato 'hh:mm:ss' o 0 para salir:");
+
+        while (true) {
+            entrada = scanner.nextLine();
+
+
+            if (entrada.equals("0")) {
+                System.out.println("Programa finalizado.");
+                break;
+            }
+
+            String[] partes = entrada.split(":");
+
+
+            if (partes.length != 3) {
+                System.out.println("La hora es inválida. Formato incorrecto.");
+                continue;
+            }
+
+            try {
+                int horas = Integer.parseInt(partes[0]);
+                int minutos = Integer.parseInt(partes[1]);
+                int segundos = Integer.parseInt(partes[2]);
+
+
+                if (horas >= 0 && horas < 24 && minutos >= 0 && minutos < 60 && segundos >= 0 && segundos < 60) {
+                    System.out.println("La hora es válida.");
+                } else {
+                    System.out.println("La hora es inválida. Valores fuera de rango.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("La hora es inválida. Contiene caracteres no numéricos.");
+            }
+        }
+    }
+
+    public static void buscarNumerosReversibles() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce la cantidad de números reversibles a encontrar (0 para salir):");
+
+        while (true) {
+            int n = scanner.nextInt();
+
+            if (n == 0) {
+                System.out.println("Programa finalizado.");
+                break;
+            }
+
+            System.out.println("Buscando los primeros " + n + " números reversibles:");
+            int encontrados = 0;
+            int numero = 1;
+
+            while (encontrados < n) {
+                int inverso = Integer.parseInt(new StringBuilder(String.valueOf(numero)).reverse().toString());
+                int suma = numero + inverso;
+
+
+                if (String.valueOf(numero).length() == String.valueOf(inverso).length()) {
+
+                    boolean todosImpares = true;
+                    for (char c : String.valueOf(suma).toCharArray()) {
+                        if ((c - '0') % 2 == 0) {
+                            todosImpares = false;
+                            break;
+                        }
+                    }
+
+                    if (todosImpares) {
+                        System.out.println(numero);
+                        encontrados++;
+                    }
+                }
+
+                numero++;
+            }
+        }
+    }
+
+    public static void realizarConversiones() {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+
+            System.out.println("Opciones:");
+            System.out.println("1.- Transformar a binario.");
+            System.out.println("2.- Transformar a octal.");
+            System.out.println("3.- Transformar a hexadecimal.");
+            System.out.println("4.- Fin del proceso.");
+            System.out.print("Selecciona una opción: ");
+
+            int opcion = scanner.nextInt();
+
+            if (opcion == 4) {
+                System.out.println("Proceso finalizado.");
+                break;
+            }
+
+            if (opcion < 1 || opcion > 4) {
+                System.out.println("Opción inválida. Intenta de nuevo.");
+                continue;
+            }
+
+
+            System.out.print("Introduce un número entero: ");
+            int numero = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("Binario: " + Integer.toBinaryString(numero));
+                    break;
+                case 2:
+                    System.out.println("Octal: " + Integer.toOctalString(numero));
+                    break;
+                case 3:
+                    System.out.println("Hexadecimal: " + Integer.toHexString(numero).toUpperCase());
+                    break;
+            }
+        }
+    }
+
+    public static void procesarEntradaUsuario() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Introduce el nombre completo y DNI en el formato: 'Nombre Apellido, DNI'");
+        System.out.println("Ejemplo: Javier Rodríguez López, 33456789Z");
+
+        String entrada = scanner.nextLine();
+
+
+        int posicionComa = entrada.indexOf(',');
+
+        if (posicionComa == -1) {
+            System.out.println("Formato inválido. Asegúrate de usar una coma para separar el nombre del DNI.");
+        } else {
+
+            String nombre = entrada.substring(0, posicionComa).trim().toUpperCase();
+            String dni = entrada.substring(posicionComa + 1).trim();
+
+
+            System.out.println("Nombre: " + nombre);
+            System.out.println("DNI: " + dni);
+        }
+    }
+
+    public static void encontrarNumerosPerfectos() {
+        int contador = 0;
+        int numero = 1;
+
+        System.out.println("Los primeros cuatro números perfectos son:");
+
+        while (contador < 4) {
+            int sumaDivisores = 0;
+
+
+            for (int i = 1; i <= numero / 2; i++) {
+                if (numero % i == 0) {
+                    sumaDivisores += i;
+                }
+            }
+
+            if (sumaDivisores == numero) {
+                System.out.println(numero);
+                contador++;
+            }
+
+            numero++;
+        }
+    }
+
     private static int ejercicio12(int n) {
         if (n < 10 && n > -10) {
             return 1;
@@ -231,6 +404,21 @@ public class Boletin3 {
                 break;
             case 6:
                 ejecutarClasificacion(src);
+                break;
+            case 7:
+                ejecutarPrograma();
+                break;
+            case 8:
+                buscarNumerosReversibles();
+                break;
+            case 9:
+                realizarConversiones();
+                break;
+            case 10:
+                procesarEntradaUsuario();
+                break;
+            case 11:
+                encontrarNumerosPerfectos();
                 break;
             case 12:
                 System.out.println("introduce un numero entero :");
