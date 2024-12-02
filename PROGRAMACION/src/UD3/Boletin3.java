@@ -365,6 +365,57 @@ public class Boletin3 {
         }
     }
 
+    public static void calcularPotencia() {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Introduce la base (x): ");
+        double x = scanner.nextDouble();
+
+
+        System.out.print("Introduce el exponente (n): ");
+        int n = scanner.nextInt();
+
+
+        double resultado = calcularPotenciaRecursiva(x, n);
+
+
+        System.out.println("Resultado: " + resultado);
+
+        scanner.close();
+    }
+
+    private static double calcularPotenciaRecursiva(double x, int n) {
+
+        if (n == 0) {
+            return 1;
+        }
+
+        if (n < 0) {
+            return 1 / calcularPotenciaRecursiva(x, -n);
+        }
+        return x * calcularPotenciaRecursiva(x, n - 1);
+    }
+
+    private static int fibonacci(int n) {
+        if (n == 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    private static void ejecutarFibonacci(Scanner scanner) {
+        System.out.print("Introduce el número de términos de la serie de Fibonacci a mostrar: ");
+        int n = scanner.nextInt();
+
+        System.out.println("Los primeros " + n + " términos de la serie de Fibonacci son:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -388,9 +439,9 @@ public class Boletin3 {
                 break;
             case 4:
                 System.out.print("Introduce un carácter: ");
-                char letra = src.next().charAt(0); // Leer el primer carácter introducido
+                char letra = src.next().charAt(0);
 
-                // Comprobar si el carácter es una vocal
+
                 if (esVocal(letra)) {
                     System.out.println(letra + " es una vocal.");
                 } else if (esConsonante(letra)) {
@@ -421,14 +472,34 @@ public class Boletin3 {
                 encontrarNumerosPerfectos();
                 break;
             case 12:
-                System.out.println("introduce un numero entero :");
-                int n = src.nextInt();
-                int digitos = ejercicio12(n);
-                System.out.println("El número " + n + " tiene " + digitos + " dígitos.");
+                try {
+                    System.out.println("introduce un numero entero :");
+                    int n = src.nextInt();
+                    int digitos = ejercicio12(n);
+                    System.out.println("El número " + n + " tiene " + digitos + " dígitos.");
+                } catch (Exception e) {
+                    System.out.println("Error: No bancamos las recursividad");
+                }
+                break;
+            case 13:
+                try {
+                    calcularPotencia();
+                } catch (Exception e) {
+                    System.out.println("Error: No bancamos las recursividad");
+                }
+                break;
+            case 14:
+                try {
+                    ejecutarFibonacci(src);
+                } catch (Exception e) {
+                    System.out.println("Error: aqui no bancamos la recusividad");
+                }
+                break;
             default:
                 System.out.println("El número de ejercicio es incorrecto.");
                 break;
         }
     }
 }
+
 

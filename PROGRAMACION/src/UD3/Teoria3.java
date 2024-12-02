@@ -1,5 +1,7 @@
 package UD3;
 
+import java.awt.*;
+
 public class Teoria3 {
 
     private static void imprimirTablaMultiplicar(int valor) {
@@ -80,6 +82,9 @@ public class Teoria3 {
         presentar();
         presentar(b, a);
         System.out.println(factorial(5));
+        int valor = Math.abs(10);
+        Point puntoOrigen = new Point(5, 10);
+        int ejeX = puntoOrigen.x;
     }
 }
 
