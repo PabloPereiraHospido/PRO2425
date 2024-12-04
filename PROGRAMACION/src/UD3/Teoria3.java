@@ -1,6 +1,7 @@
 package UD3;
 
 import java.awt.*;
+import java.util.Random;
 
 public class Teoria3 {
 
@@ -85,6 +86,18 @@ public class Teoria3 {
         int valor = Math.abs(10);
         Point puntoOrigen = new Point(5, 10);
         int ejeX = puntoOrigen.x;
+        double longitud = Math.PI;
+        Random aleatorio = new Random();
+        for (int i = 0; i < 5; i++) {
+            System.out.println(aleatorio.nextInt());
+        }
+        Random aleatorio1 = new Random(123);
+        Random aleatorio2 = new Random(123);
+
+        for (int i = 0; i < 5; i++) {
+
+            System.out.println(aleatorio1.nextInt() + "t" + aleatorio2.nextInt());
+        }
     }
 }
 
