@@ -120,8 +120,30 @@ public class Teoria3 {
         } else {
             System.out.println("son diferentes");
         }
-        String resultado= "           hola" + "profe";
+        String resultado = "           hola" + "profe";
         System.out.println(resultado.trim());
+
+        Integer i = 5;
+        int aa = Integer.parseInt("5");
+
+        Boolean b1 = new Boolean(false);
+        Boolean c = new Boolean("trUe");
+        Boolean d = new Boolean("Non");
+
+        String s = "5";
+        int i1 = Integer.parseInt(s);
+
+        Integer j = new Integer(5);
+        s = j.toString();
+
+        float f = j.floatValue();
+
+
+        Boolean estado=null;
+        boolean estado2=null;
+
+        Integer entero=null;
+        int entero2=null;
     }
 }
 
