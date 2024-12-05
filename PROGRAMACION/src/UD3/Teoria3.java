@@ -98,6 +98,30 @@ public class Teoria3 {
 
             System.out.println(aleatorio1.nextInt() + "t" + aleatorio2.nextInt());
         }
+        String cadena1 = "programación";
+        String cadena2 = "programación";
+
+        if (cadena1 == cadena2) {
+            System.out.println("son iguales");
+        } else {
+            System.out.println("son diferentes");
+        }
+
+        String cadena3 = new String("programación");
+        String cadena4 = new String("ProgramacióN");
+        if (cadena3 == cadena4) {
+            System.out.println("son iguales");
+        } else {
+            System.out.println("son diferentes");
+        }
+
+        if (cadena3.equalsIgnoreCase(cadena4)) {
+            System.out.println("son iguales");
+        } else {
+            System.out.println("son diferentes");
+        }
+        String resultado= "           hola" + "profe";
+        System.out.println(resultado.trim());
     }
 }
 
