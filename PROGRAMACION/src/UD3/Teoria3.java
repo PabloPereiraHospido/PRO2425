@@ -1,7 +1,10 @@
 package UD3;
 
 import java.awt.*;
+import java.math.BigInteger;
+import java.text.DecimalFormat;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Teoria3 {
 
@@ -139,11 +142,29 @@ public class Teoria3 {
         float f = j.floatValue();
 
 
-        Boolean estado=null;
+      /*  Boolean estado=null;
         boolean estado2=null;
 
         Integer entero=null;
         int entero2=null;
+
+       Scanner src=new Scanner(System.in);
+        System.out.println("introduce opcion");
+        int entrada;
+
+        if(src.hasNextInt()){
+            entrada=src.nextInt();
+            src.nextLine();
+        }else{
+            System.out.println("introduce un numero");
+        }
+        entrada=src.nextInt();
+        //llamariamos al ejercicio correspondiente
+        BigInteger n=new BigInteger("1");
+        BigInteger m=new BigInteger.ONE
+
+                DecimalFormat df=new DecimalFormat(".##")
+                        System.out.println(df.format(3.14159265));*/
     }
 }
 

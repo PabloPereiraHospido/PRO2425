@@ -417,6 +417,48 @@ public class Boletin3 {
         }
     }
 
+    private static int invertirNumero(int numero) {
+        try {
+            if (numero < 10) {
+                return numero;
+            }
+            int longitud = (int) Math.log10(numero);
+            return (numero % 10) * (int) Math.pow(10, longitud) + invertirNumero(numero / 10);
+        } catch (Exception e) {
+            System.out.println("Error: No bancamos las recursividad");
+        }
+        return 0;
+    }
+
+
+    private static int sumarDigitos() {
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Introduce un número: ");
+            int numero = scanner.nextInt();
+            scanner.close();
+
+
+            return sumarDigitosRecursivo(numero);
+        } catch (Exception e) {
+            System.out.println("Error: No bancamos las recursividad");
+        }
+        return 0;
+    }
+
+
+    private static int sumarDigitosRecursivo(int numero) {
+        try {
+            if (numero == 0) {
+                return 0;
+            }
+            return (numero % 10) + sumarDigitosRecursivo(numero / 10);
+        } catch (Exception e) {
+            System.out.println("Error: No bancamos las recursividad");
+        }
+        return 0;
+    }
+
     public static void main(String[] args) {
 
         System.out.println("Introduce el número de ejercicio:");
@@ -494,6 +536,14 @@ public class Boletin3 {
                 } catch (Exception e) {
                     System.out.println("Error: aqui no bancamos la recusividad");
                 }
+                break;
+            case 15:
+                System.out.println("introduce el número para invertir: ");
+                int numero = src.nextInt();
+                System.out.println("Número invertido: " + invertirNumero(numero));
+                break;
+            case 16:
+                System.out.println("La suma de los dígitos es: " + sumarDigitos());
                 break;
             default:
                 System.out.println("El número de ejercicio es incorrecto.");
