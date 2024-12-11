@@ -458,7 +458,29 @@ public class Boletin3 {
         }
         return 0;
     }
+private static void algoritmoEuclidesRecursivo(int a, int b) {
+        try {
+            if (b == 0) {
+                System.out.println("El máximo común divisor es: " + a);
+            } else {
+                algoritmoEuclidesRecursivo(b, a % b);
+            }
+        } catch (Exception e) {
+            System.out.println("Error: No bancamos las recursividad");
+        }
+    }
+    public static boolean esPar(int numero) {
 
+        if (numero == 0) {
+            return true;
+        }
+
+        if (numero == 1) {
+            return false;
+        }
+
+        return esPar(numero - 2);
+    }
     public static void main(String[] args) {
 
         System.out.println("Introduce el número de ejercicio:");
@@ -544,6 +566,22 @@ public class Boletin3 {
                 break;
             case 16:
                 System.out.println("La suma de los dígitos es: " + sumarDigitos());
+                break;
+            case 17:
+                System.out.println("Introduce el primer número:");
+                int a = src.nextInt();
+                System.out.println("Introduce el segundo número:");
+                int b = src.nextInt();
+                algoritmoEuclidesRecursivo(a, b);
+                break;
+            case 18:
+                System.out.println("Introduce un número entero:");
+                int num = src.nextInt();
+                if (esPar(num)) {
+                    System.out.println("El número es par.");
+                } else {
+                    System.out.println("El número es impar.");
+                }
                 break;
             default:
                 System.out.println("El número de ejercicio es incorrecto.");

@@ -3,6 +3,9 @@ package UD3;
 import java.awt.*;
 import java.math.BigInteger;
 import java.text.DecimalFormat;
+import java.time.*;
+import java.time.format.TextStyle;
+import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -165,6 +168,17 @@ public class Teoria3 {
 
                 DecimalFormat df=new DecimalFormat(".##")
                         System.out.println(df.format(3.14159265));*/
+        System.out.println("fecha actual" + LocalDate.now());
+        System.out.println("Hora actual" + LocalTime.now());
+        System.out.println("fecha y hora actual" + LocalDateTime.now());
+        System.out.println("el instante actual es"+ Instant.now());
+        System.out.println("en zona horaria"+ ZonedDateTime.now());
+
+        LocalDate fecha=LocalDate.now();
+        Month mes=fecha.getMonth();
+        System.out.println(fecha.getMonth());
+        System.out.println(fecha.getDayOfMonth());
+        String nombreMes=mes.getDisplayName(TextStyle.FULL, Locale.forLanguageTag("es-ES"));
     }
 }
 
