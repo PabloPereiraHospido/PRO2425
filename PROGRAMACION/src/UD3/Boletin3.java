@@ -458,7 +458,8 @@ public class Boletin3 {
         }
         return 0;
     }
-private static void algoritmoEuclidesRecursivo(int a, int b) {
+
+    private static void algoritmoEuclidesRecursivo(int a, int b) {
         try {
             if (b == 0) {
                 System.out.println("El máximo común divisor es: " + a);
@@ -469,6 +470,7 @@ private static void algoritmoEuclidesRecursivo(int a, int b) {
             System.out.println("Error: No bancamos las recursividad");
         }
     }
+
     public static boolean esPar(int numero) {
 
         if (numero == 0) {
@@ -481,6 +483,40 @@ private static void algoritmoEuclidesRecursivo(int a, int b) {
 
         return esPar(numero - 2);
     }
+
+    public static int sumaRecursiva(int n) {
+        try {
+            if (n <= 1) {
+                return n;
+            }
+            return n + sumaRecursiva(n - 1);
+        } catch (Exception e) {
+            System.out.println("Error: No bancamos las recursividad");
+        }
+        return 0;
+    }
+
+    private static boolean esPalindromo(String cadena) {
+        Scanner src = new Scanner(System.in);
+        String texto = src.nextLine();
+        try {
+            texto = texto.replaceAll(" ", "");
+            if (texto.length() <= 1) {
+                return true;
+            } else {
+                if (texto.charAt(0) == texto.charAt(texto.length() - 1)) {
+                    return esPalindromo(texto.substring(1, texto.length() - 1));
+                } else {
+                    return false;
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error: No bancamos las recursividad");
+        }
+        return false;
+    }
+
+
     public static void main(String[] args) {
 
         System.out.println("Introduce el número de ejercicio:");
@@ -581,6 +617,31 @@ private static void algoritmoEuclidesRecursivo(int a, int b) {
                     System.out.println("El número es par.");
                 } else {
                     System.out.println("El número es impar.");
+                }
+                break;
+            case 19:
+
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.print("Introduce un número entero positivo: ");
+                int n = scanner.nextInt();
+
+
+                if (n < 1) {
+                    System.out.println("Por favor, introduce un número entero positivo.");
+                } else {
+
+                    int resultado = sumaRecursiva(n);
+                    System.out.println("La suma de los números de 1 a " + n + " es: " + resultado);
+                }
+                break;
+            case 20:
+                System.out.println("Introduce una cadena:");
+                String cadena = src.nextLine();
+                if (esPalindromo(cadena)) {
+                    System.out.println("La cadena es un palíndromo.");
+                } else {
+                    System.out.println("La cadena no es un palíndromo.");
                 }
                 break;
             default:

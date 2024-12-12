@@ -5,6 +5,8 @@ import java.math.BigInteger;
 import java.text.DecimalFormat;
 import java.time.*;
 import java.time.format.TextStyle;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjusters;
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -171,14 +173,35 @@ public class Teoria3 {
         System.out.println("fecha actual" + LocalDate.now());
         System.out.println("Hora actual" + LocalTime.now());
         System.out.println("fecha y hora actual" + LocalDateTime.now());
-        System.out.println("el instante actual es"+ Instant.now());
-        System.out.println("en zona horaria"+ ZonedDateTime.now());
+        System.out.println("el instante actual es" + Instant.now());
+        System.out.println("en zona horaria" + ZonedDateTime.now());
 
-        LocalDate fecha=LocalDate.now();
-        Month mes=fecha.getMonth();
-        System.out.println(fecha.getMonth());
-        System.out.println(fecha.getDayOfMonth());
-        String nombreMes=mes.getDisplayName(TextStyle.FULL, Locale.forLanguageTag("es-ES"));
+        LocalDate hoy = LocalDate.now();
+        Month mes = hoy.getMonth();
+        System.out.println(hoy.getMonth());
+        System.out.println(hoy.getDayOfMonth());
+        String nombreMes = mes.getDisplayName(TextStyle.FULL, Locale.forLanguageTag("es-ES"));
+
+        LocalDate futuro = hoy.plusDays(10);
+        System.out.println(futuro);
+
+        System.out.println(hoy.with(TemporalAdjusters.firstDayOfMonth()).getDayOfWeek());
+        System.out.println(hoy.with(TemporalAdjusters.lastDayOfMonth()).getDayOfWeek());
+
+        System.out.println(ChronoUnit.DAYS.between(hoy,futuro));
+
+        LocalDate fechaNacimiento=LocalDate.of(1999,Month.DECEMBER,9);
+        System.out.println(ChronoUnit.YEARS.between(fechaNacimiento,hoy));
+
+        LocalDate finAnho=hoy.with(TemporalAdjusters.lastDayOfYear());
+        Period hastaFinAnho=hoy.until(finAnho);
+        System.out.println("Meses : "+hastaFinAnho.getMonths());
+        System.out.println("Dias : "+hastaFinAnho.getDays());
+
+        LocalDateTime hoyConHora=LocalDateTime.now();
+        LocalDateTime finAnhoConHora=LocalDateTime.of(2024,Month.DECEMBER,31,23,59);
+        Duration diferencia=Duration.between(hoyConHora,finAnhoConHora);
+        System.out.println(diferencia.toDays());
     }
 }
 
