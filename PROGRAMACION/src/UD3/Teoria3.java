@@ -4,6 +4,8 @@ import java.awt.*;
 import java.math.BigInteger;
 import java.text.DecimalFormat;
 import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.time.format.TextStyle;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
@@ -131,12 +133,12 @@ public class Teoria3 {
         String resultado = "           hola" + "profe";
         System.out.println(resultado.trim());
 
-        Integer i = 5;
+        /*Integer i = 5;
         int aa = Integer.parseInt("5");
 
         Boolean b1 = new Boolean(false);
         Boolean c = new Boolean("trUe");
-        Boolean d = new Boolean("Non");
+        Boolean d = new Boolean("Non");*/
 
         String s = "5";
         int i1 = Integer.parseInt(s);
@@ -188,20 +190,41 @@ public class Teoria3 {
         System.out.println(hoy.with(TemporalAdjusters.firstDayOfMonth()).getDayOfWeek());
         System.out.println(hoy.with(TemporalAdjusters.lastDayOfMonth()).getDayOfWeek());
 
-        System.out.println(ChronoUnit.DAYS.between(hoy,futuro));
+        System.out.println(ChronoUnit.DAYS.between(hoy, futuro));
 
-        LocalDate fechaNacimiento=LocalDate.of(1999,Month.DECEMBER,9);
-        System.out.println(ChronoUnit.YEARS.between(fechaNacimiento,hoy));
+        LocalDate fechaNacimiento = LocalDate.of(1999, Month.DECEMBER, 9);
+        System.out.println(ChronoUnit.YEARS.between(fechaNacimiento, hoy));
 
-        LocalDate finAnho=hoy.with(TemporalAdjusters.lastDayOfYear());
-        Period hastaFinAnho=hoy.until(finAnho);
-        System.out.println("Meses : "+hastaFinAnho.getMonths());
-        System.out.println("Dias : "+hastaFinAnho.getDays());
+        LocalDate finAnho = hoy.with(TemporalAdjusters.lastDayOfYear());
+        Period hastaFinAnho = hoy.until(finAnho);
+        System.out.println("Meses : " + hastaFinAnho.getMonths());
+        System.out.println("Dias : " + hastaFinAnho.getDays());
 
-        LocalDateTime hoyConHora=LocalDateTime.now();
-        LocalDateTime finAnhoConHora=LocalDateTime.of(2024,Month.DECEMBER,31,23,59);
-        Duration diferencia=Duration.between(hoyConHora,finAnhoConHora);
+        LocalDateTime hoyConHora = LocalDateTime.now();
+        LocalDateTime finAnhoConHora = LocalDateTime.of(2024, Month.DECEMBER, 31, 23, 59);
+        Duration diferencia = Duration.between(hoyConHora, finAnhoConHora);
         System.out.println(diferencia.toDays());
+
+        LocalDate fechaParse = LocalDate.parse("2021-07-06");
+        System.out.println(fechaParse);
+
+        LocalDate seisNov = LocalDate.parse("06/11/2021",
+                DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        System.out.println(seisNov);
+
+        LocalDateTime fechaConHora = LocalDateTime.now();
+
+        System.out.println("formato por defecto " + fechaConHora);
+        System.out.println("formato por defecto " + fechaConHora.format(DateTimeFormatter.ISO_DATE));
+        DateTimeFormatter esDateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        System.out.println("Formato españa " + fechaConHora.format(esDateFormat));
+
+        System.out.println(fechaConHora.format(DateTimeFormatter.ofPattern("'Hoy es' EEEE dd 'de' MMMM 'de' yyyy 'y son las' HH:mm:ss")
+                .withLocale(new Locale("es", "ES"))));
+        String idiomaLocal=System.getProperty("user.language");
+        String paisLocal=System.getProperty("user.country");
+        System.out.println(fechaConHora.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT)
+                .withLocale(new Locale(idiomaLocal,paisLocal))));
     }
 }
 
