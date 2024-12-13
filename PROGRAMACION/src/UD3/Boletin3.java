@@ -516,7 +516,33 @@ public class Boletin3 {
         return false;
     }
 
-
+    private static boolean esCapicuaRecursivo(int numero, int original) {
+        try {
+            if (numero == 0) {
+                return numero == original;
+            }
+            return esCapicuaRecursivo(numero / 10, original);
+        } catch (Exception e) {
+            System.out.println("Error: No bancamos las recursividad");
+        }
+        return false;
+    }
+private static void torresHanoiRecursivo(int n, char origen, char destino, char auxiliar) {
+        try {
+            if (n == 1) {
+                System.out.println("Mover disco 1 de " + origen + " a " + destino);
+                return;
+            }
+            torresHanoiRecursivo(n - 1, origen, auxiliar, destino);
+            System.out.println("Mover disco " + n + " de " + origen + " a " + destino);
+            torresHanoiRecursivo(n - 1, auxiliar, destino, origen);
+        } catch (Exception e) {
+            System.out.println("Error: No bancamos las recursividad");
+        }
+    }
+    private static void completarCódigo(){
+        
+    }
     public static void main(String[] args) {
 
         System.out.println("Introduce el número de ejercicio:");
@@ -643,6 +669,20 @@ public class Boletin3 {
                 } else {
                     System.out.println("La cadena no es un palíndromo.");
                 }
+                break;
+            case 21:
+                System.out.println("Introduce un número");
+                int numero1 = src.nextInt();
+                if (esCapicuaRecursivo(numero1, numero1)) {
+                    System.out.println("El número es capicúa.");
+                } else {
+                    System.out.println("El número no es capicúa.");
+                }
+                break;
+            case 22:
+                System.out.println("Introduce el número de discos:");
+                int discos = src.nextInt();
+                torresHanoiRecursivo(discos, 'A', 'C', 'B');
                 break;
             default:
                 System.out.println("El número de ejercicio es incorrecto.");
