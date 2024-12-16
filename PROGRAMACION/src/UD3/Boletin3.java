@@ -1,5 +1,6 @@
 package UD3;
 
+import java.awt.*;
 import java.time.YearMonth;
 import java.util.Scanner;
 import java.lang.Exception;
@@ -527,7 +528,8 @@ public class Boletin3 {
         }
         return false;
     }
-private static void torresHanoiRecursivo(int n, char origen, char destino, char auxiliar) {
+
+    private static void torresHanoiRecursivo(int n, char origen, char destino, char auxiliar) {
         try {
             if (n == 1) {
                 System.out.println("Mover disco 1 de " + origen + " a " + destino);
@@ -540,9 +542,34 @@ private static void torresHanoiRecursivo(int n, char origen, char destino, char 
             System.out.println("Error: No bancamos las recursividad");
         }
     }
-    private static void completarCódigo(){
-        
+
+    private static void completarCódigo() {
+        // Crear un objeto Point con coordenadas iniciales
+
+        Point puntoOrigen = new Point(23, 94);
+
+        // Mostrar coordenadas x e y utilizando los campos de la clase
+        System.out.println("Coordenada x: " + puntoOrigen.x);
+        System.out.println("Coordenada y: " + puntoOrigen.y);
+
+        // Mostrar coordenadas utilizando métodos de dos modos distintos
+        System.out.println("Coordenadas usando toString(): " + puntoOrigen.toString());
+        System.out.println("Coordenadas separadas: (" + puntoOrigen.getX() + ", " + puntoOrigen.getY() + ")");
+
+        // Trasladar el punto incrementando las coordenadas x e y en 50 unidades cada una
+        puntoOrigen.translate(50, 50);
+        System.out.println("Punto trasladado: (" + puntoOrigen.x + ", " + puntoOrigen.y + ")");
+
+        // ¿Qué hace la siguiente instrucción?
+        int coordenadax = new Point(10, 10).x;
+        System.out.println("Coordenada x de un nuevo punto (10, 10): " + coordenadax);
+
+        // ¿Podría recuperarse la coordenada y del punto anterior?
+        // Respuesta: Sí, si guardamos el punto en una variable.
+        Point nuevoPunto = new Point(10, 10);
+        System.out.println("Coordenada y del nuevo punto: " + nuevoPunto.y);
     }
+
     public static void main(String[] args) {
 
         System.out.println("Introduce el número de ejercicio:");
@@ -683,6 +710,9 @@ private static void torresHanoiRecursivo(int n, char origen, char destino, char 
                 System.out.println("Introduce el número de discos:");
                 int discos = src.nextInt();
                 torresHanoiRecursivo(discos, 'A', 'C', 'B');
+                break;
+            case 23:
+                completarCódigo();
                 break;
             default:
                 System.out.println("El número de ejercicio es incorrecto.");
