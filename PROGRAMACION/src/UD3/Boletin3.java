@@ -544,32 +544,25 @@ public class Boletin3 {
     }
 
     private static void completarCódigo() {
-        // Crear un objeto Point con coordenadas iniciales
 
         Point puntoOrigen = new Point(23, 94);
 
-        // Mostrar coordenadas x e y utilizando los campos de la clase
         System.out.println("Coordenada x: " + puntoOrigen.x);
         System.out.println("Coordenada y: " + puntoOrigen.y);
 
-        // Mostrar coordenadas utilizando métodos de dos modos distintos
         System.out.println("Coordenadas usando toString(): " + puntoOrigen.toString());
         System.out.println("Coordenadas separadas: (" + puntoOrigen.getX() + ", " + puntoOrigen.getY() + ")");
 
-        // Trasladar el punto incrementando las coordenadas x e y en 50 unidades cada una
         puntoOrigen.translate(50, 50);
         System.out.println("Punto trasladado: (" + puntoOrigen.x + ", " + puntoOrigen.y + ")");
 
-        // ¿Qué hace la siguiente instrucción?
         int coordenadax = new Point(10, 10).x;
         System.out.println("Coordenada x de un nuevo punto (10, 10): " + coordenadax);
 
-        // ¿Podría recuperarse la coordenada y del punto anterior?
-        // Respuesta: Sí, si guardamos el punto en una variable.
         Point nuevoPunto = new Point(10, 10);
         System.out.println("Coordenada y del nuevo punto: " + nuevoPunto.y);
     }
-
+    
     public static void main(String[] args) {
 
         System.out.println("Introduce el número de ejercicio:");
