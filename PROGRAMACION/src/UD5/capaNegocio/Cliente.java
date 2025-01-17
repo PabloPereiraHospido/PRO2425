@@ -26,9 +26,11 @@ public class Cliente {
     }
 
     public void setNif(String nif) {
-        this.nif = nif;
+        String letras = "TRWAGMYFPDXDNJZSQVHLCKE";
+        this.nif = String.valueOf(dni) + letras.charAt(dni % 23);
     }
-    public Cliente(){
+
+    public Cliente() {
 
     }
 
@@ -37,4 +39,5 @@ public class Cliente {
         this.dni = dni;
         this.nif = nif;
     }
+
 }

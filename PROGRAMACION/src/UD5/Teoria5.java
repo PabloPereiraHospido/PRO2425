@@ -38,8 +38,8 @@ public class Teoria5 {
         aurelia2.setNombre("Aurelia");
         aurelia2.setApellido("Ramirez");
 
-        Persona manolo=new Persona("Manolo","Perez",35,12345,"12345.Y","1999_01-01","12345abx","27003","manolo@gmail.com",12345,"a",Sexo.HOMBRE);
-        Persona manolo2=new Persona();
+        Persona manolo = new Persona("Manolo", "Perez", 35, 12345, "12345.Y", "1999_01-01", "12345abx", "27003", "manolo@gmail.com", 12345, "a", Sexo.HOMBRE);
+        Persona manolo2 = new Persona();
         manolo2.setNombre("Manolo");
         manolo2.setApellido("Perez");
         manolo2.setEdad(35);
@@ -52,7 +52,14 @@ public class Teoria5 {
         manolo2.setGrupoSanguineo("a");
         manolo2.setSexo(Sexo.HOMBRE);
 
+        Persona hector = new Persona();
+        hector.setNombre("Hector");
 
+        Profesor victor = new Profesor();
+        victor.setNombre("Victor");
+
+        Alumno Pablo = new Alumno();
+        Pablo.setNombre("Pablo");
 
     }
 }
