@@ -532,4 +532,62 @@ public class Coche {
     public void setPotencia(int potencia) {
         this.potencia = potencia;
     }
+
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", anho=" + anho +
+                ", precio=" + precio +
+                ", color='" + color + '\'' +
+                ", matricula='" + matricula + '\'' +
+                ", numeroDePuertas=" + numeroDePuertas +
+                ", tipoDeMotor='" + tipoDeMotor + '\'' +
+                ", cilindrada=" + cilindrada +
+                ", potencia=" + potencia +
+                ", consumo=" + consumo +
+                ", transmision='" + transmision + '\'' +
+                ", traccion='" + traccion + '\'' +
+                ", capacidadDeposito=" + capacidadDeposito +
+                ", autonomia=" + autonomia +
+                ", longitud=" + longitud +
+                ", anchura=" + anchura +
+                ", altura=" + altura +
+                ", peso=" + peso +
+                ", capacidadMaletero=" + capacidadMaletero +
+                ", airbags=" + airbags +
+                ", climatizacion='" + climatizacion + '\'' +
+                ", sistemaDeSonido='" + sistemaDeSonido + '\'' +
+                ", pantallaTactil=" + pantallaTactil +
+                ", navegadorGPS=" + navegadorGPS +
+                ", camaraTrasera=" + camaraTrasera +
+                ", asistenciaDeAparcamiento=" + asistenciaDeAparcamiento +
+                ", sensoresDeProximidad=" + sensoresDeProximidad +
+                ", farosLED=" + farosLED +
+                ", techoSolar=" + techoSolar +
+                ", controlDeCruzero=" + controlDeCruzero +
+                ", asientosCalefactables=" + asientosCalefactables +
+                ", sistemaAntibloqueo=" + sistemaAntibloqueo +
+                ", controlDeEstabilidad=" + controlDeEstabilidad +
+                ", detectorDeColision=" + detectorDeColision +
+                ", asistenciaDeCarril=" + asistenciaDeCarril +
+                ", frenadoAutonomo=" + frenadoAutonomo +
+                ", kilometraje=" + kilometraje +
+                ", ultimaRevision=" + ultimaRevision +
+                ", nivelDeAceite=" + nivelDeAceite +
+                ", estadoDeNeumaticos='" + estadoDeNeumaticos + '\'' +
+                ", numeroDeDuenosAnteriores=" + numeroDeDuenosAnteriores +
+                ", tipoDeLlanta='" + tipoDeLlanta + '\'' +
+                ", pegatinas=" + pegatinas +
+                ", alarmaPersonalizada=" + alarmaPersonalizada +
+                ", modificaciones='" + modificaciones + '\'' +
+                ", capacidadBateria=" + capacidadBateria +
+                ", tiempoDeCarga=" + tiempoDeCarga +
+                ", tipoDeConector='" + tipoDeConector + '\'' +
+                ", modoEcologico=" + modoEcologico +
+                '}';
+    }
 }
+
+

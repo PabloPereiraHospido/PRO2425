@@ -40,4 +40,12 @@ public class Factura {
         this.importe = importe;
     }
 
+    @Override
+    public String toString() {
+        return "Factura{" +
+                "ID=" + ID +
+                ", descripcion='" + descripcion + '\'' +
+                ", importe=" + importe +
+                '}';
+    }
 }

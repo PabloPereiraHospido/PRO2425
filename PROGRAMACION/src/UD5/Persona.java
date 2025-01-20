@@ -145,4 +145,25 @@ public Persona(){
         this.grupoSanguineo=grupoSanguineo;
         this.sexo=sexo;
     }
+    public void trabajar(){
+        System.out.println("Estoy trabajando");
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", edad=" + edad +
+                ", dni=" + dni +
+                ", nif='" + nif + '\'' +
+                ", fechaNacimiento='" + fechaNacimiento + '\'' +
+                ", cuentaBancaria='" + cuentaBancaria + '\'' +
+                ", direccionPostal='" + direccionPostal + '\'' +
+                ", email='" + email + '\'' +
+                ", telefono=" + telefono +
+                ", grupoSanguineo='" + grupoSanguineo + '\'' +
+                ", sexo=" + sexo +
+                '}';
+    }
 }

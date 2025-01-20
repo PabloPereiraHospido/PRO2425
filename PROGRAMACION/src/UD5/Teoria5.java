@@ -61,5 +61,25 @@ public class Teoria5 {
         Alumno Pablo = new Alumno();
         Pablo.setNombre("Pablo");
 
+        Persona vladimir = new Persona();
+        vladimir.trabajar();
+
+        Alumno aitor = new Alumno();
+        aitor.trabajar();
+
+        Profesor Victor = new Profesor();
+        victor.trabajar();
+        victor.setNombre("Victor");
+        victor.setApellido("Blanco");
+        System.out.println(victor.toString());
+        System.out.println(aitor.toString());
+        System.out.println(vladimir.toString());
+        Animal leo = new Animal();
+        Animal maya = new Perro();
+       // Perro lola = (Perro) new Animal();
+        leo.mueve();
+        maya.mueve();
+        ((Perro)maya).salta();
+        }
     }
-}
+

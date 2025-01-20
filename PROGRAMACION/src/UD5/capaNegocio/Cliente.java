@@ -40,4 +40,12 @@ public class Cliente {
         this.nif = nif;
     }
 
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nombre='" + nombre + '\'' +
+                ", dni=" + dni +
+                ", nif='" + nif + '\'' +
+                '}';
+    }
 }
