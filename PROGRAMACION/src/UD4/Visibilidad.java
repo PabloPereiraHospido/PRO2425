@@ -1,10 +1,11 @@
 package UD4;
 
+import UD5.Alumno;
 import UD5.Persona;
 
 public class Visibilidad {
     public static void main(String[] args) {
-        Persona manuel = new Persona();
+        Persona manuel = new Alumno();
         // manuel.edad=30;
         // manuel.nombre="Manuel";
         // manuel.apellido="Perez";

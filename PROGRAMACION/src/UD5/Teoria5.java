@@ -2,7 +2,7 @@ package UD5;
 
 public class Teoria5 {
     public static void main(String[] args) {
-        Persona pablo = new Persona();
+        Persona pablo = new Alumno();
         pablo.setEdad(25);
         pablo.setNombre("Pablo");
         pablo.setApellido("Pereira");
@@ -15,7 +15,7 @@ public class Teoria5 {
         System.out.println(pablo.getFechaNacimiento());
 
         Persona maria;
-        maria = new Persona();
+        maria = new Profesor();
         Persona manuel = maria;
         maria.setEdad(30);
         System.out.println(maria.getEdad());
@@ -32,14 +32,14 @@ public class Teoria5 {
         //maria.grupoSanguineo no deja al ser private
         //maria.telefono no deja al ser private
 
-        Persona aurelia = new Persona("Aurelia", "Ramirez");
+       // Persona aurelia = new Profesor("Aurelia", "Ramirez");
 
-        Persona aurelia2 = new Persona();
+        Persona aurelia2 = new Alumno();
         aurelia2.setNombre("Aurelia");
         aurelia2.setApellido("Ramirez");
 
-        Persona manolo = new Persona("Manolo", "Perez", 35, 12345, "12345.Y", "1999_01-01", "12345abx", "27003", "manolo@gmail.com", 12345, "a", Sexo.HOMBRE);
-        Persona manolo2 = new Persona();
+       // Persona manolo = new Alumno("Manolo", "Perez", 35, 12345, "12345.Y", "1999_01-01", "12345abx", "27003", "manolo@gmail.com", 12345, "a", Sexo.HOMBRE);
+        Persona manolo2 = new Alumno();
         manolo2.setNombre("Manolo");
         manolo2.setApellido("Perez");
         manolo2.setEdad(35);
@@ -52,7 +52,7 @@ public class Teoria5 {
         manolo2.setGrupoSanguineo("a");
         manolo2.setSexo(Sexo.HOMBRE);
 
-        Persona hector = new Persona();
+        Persona hector = new Alumno();
         hector.setNombre("Hector");
 
         Profesor victor = new Profesor();
@@ -61,13 +61,13 @@ public class Teoria5 {
         Alumno Pablo = new Alumno();
         Pablo.setNombre("Pablo");
 
-        Persona vladimir = new Persona();
+        Persona vladimir = new Alumno();
         vladimir.trabajar();
 
         Alumno aitor = new Alumno();
         aitor.trabajar();
 
-        Profesor Victor = new Profesor();
+        Profesor Victor2 = new Profesor();
         victor.trabajar();
         victor.setNombre("Victor");
         victor.setApellido("Blanco");
