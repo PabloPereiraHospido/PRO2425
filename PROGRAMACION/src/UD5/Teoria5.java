@@ -32,13 +32,13 @@ public class Teoria5 {
         //maria.grupoSanguineo no deja al ser private
         //maria.telefono no deja al ser private
 
-       // Persona aurelia = new Profesor("Aurelia", "Ramirez");
+        // Persona aurelia = new Profesor("Aurelia", "Ramirez");
 
         Persona aurelia2 = new Alumno();
         aurelia2.setNombre("Aurelia");
         aurelia2.setApellido("Ramirez");
 
-       // Persona manolo = new Alumno("Manolo", "Perez", 35, 12345, "12345.Y", "1999_01-01", "12345abx", "27003", "manolo@gmail.com", 12345, "a", Sexo.HOMBRE);
+        // Persona manolo = new Alumno("Manolo", "Perez", 35, 12345, "12345.Y", "1999_01-01", "12345abx", "27003", "manolo@gmail.com", 12345, "a", Sexo.HOMBRE);
         Persona manolo2 = new Alumno();
         manolo2.setNombre("Manolo");
         manolo2.setApellido("Perez");
@@ -76,10 +76,20 @@ public class Teoria5 {
         System.out.println(vladimir.toString());
         Animal leo = new Animal();
         Animal maya = new Perro();
-       // Perro lola = (Perro) new Animal();
+        // Perro lola = (Perro) new Animal();
         leo.mueve();
         maya.mueve();
-        ((Perro)maya).salta();
+        ((Perro) maya).salta();
+
+        FiguraGeometrica[] figuras = new FiguraGeometrica[5];
+        figuras[0] = new Rectangulo(5, 10);
+        figuras[1]=new Rectangulo(10,10);
+        figuras[2]=new Rectangulo(15,11);
+        figuras[3]=new Circulo(10);
+        figuras[4]=new Circulo(50);
+        for (int i = 0; i < figuras.length; i++) {
+            System.out.println(figuras[i].getArea());
         }
     }
+}
 
