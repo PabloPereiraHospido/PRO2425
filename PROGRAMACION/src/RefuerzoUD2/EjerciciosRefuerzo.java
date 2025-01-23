@@ -47,5 +47,27 @@ public class EjerciciosRefuerzo {
                 System.out.println("no se retiene el salario");
                 break;
         }
+        Scanner b = new Scanner(System.in);
+
+        System.out.println("¿De que numero quiere calcular la potencia? ");
+        int a = b.nextInt();
+        System.out.println("Indique la potencia mas alta a la que deseas elevar ");
+        int c = sc.nextInt();
+        int resultado = 1;
+        for (int i = 1; i <= c; i++) {
+            resultado *= a;
+            System.out.println(a + " elevado a " + i + " es igual a " + resultado);
+        }
+        int nunerador = 5;
+        int denominador = 2;
+        int cociente = 0;
+        int resto;
+        for (int i = nunerador; i >= denominador; i -= denominador) {
+            cociente += 1;
+
+        }
+        resto = nunerador;
+        System.out.println("cociente " + denominador);
+       // System.out.println(" cociente " + nunerador - (denominador * cociente));
     }
 }
