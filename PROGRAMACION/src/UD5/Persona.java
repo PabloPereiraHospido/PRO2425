@@ -3,7 +3,7 @@ package UD5;
 
 import java.security.InvalidParameterException;
 
-public abstract class Persona {
+public abstract class Persona implements SerHumano {
     private String nombre;
     private String apellido;
     private int edad;

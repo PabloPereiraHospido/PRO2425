@@ -21,4 +21,14 @@ public class Profesor extends Persona{
                 "antiguedad=" + antiguedad +
                 '}';
     }
+
+    @Override
+    public void respirar() {
+
+    }
+
+    @Override
+    public void comer() {
+        System.out.println(RAZA);
+    }
 }

@@ -28,4 +28,23 @@ public class LineaDetalle {
     public void setPrecioTotal(Integer precioTotal) {
         this.precioTotal = precioTotal;
     }
+
+    public LineaDetalle(Integer unidadesVendidas, double precioUnitario, Integer precioTotal) {
+        this.unidadesVendidas = unidadesVendidas;
+        this.precioUnitario = precioUnitario;
+        this.precioTotal = precioTotal;
+    }
+
+    public LineaDetalle() {
+    }
+
+    @Override
+    public String toString() {
+        return "LineaDetalle{" +
+                "unidadesVendidas=" + unidadesVendidas +
+                ", precioUnitario=" + precioUnitario +
+                ", precioTotal=" + precioTotal +
+                '}';
+    }
+
 }

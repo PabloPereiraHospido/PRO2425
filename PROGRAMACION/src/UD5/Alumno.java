@@ -21,4 +21,14 @@ public class Alumno extends Persona {
                 "clase='" + clase + '\'' +
                 '}';
     }
+
+    @Override
+    public void respirar() {
+
+    }
+
+    @Override
+    public void comer() {
+
+    }
 }
