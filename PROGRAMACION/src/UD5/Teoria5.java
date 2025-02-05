@@ -83,13 +83,34 @@ public class Teoria5 {
 
         FiguraGeometrica[] figuras = new FiguraGeometrica[5];
         figuras[0] = new Rectangulo(5, 10);
-        figuras[1]=new Rectangulo(10,10);
-        figuras[2]=new Rectangulo(15,11);
-        figuras[3]=new Circulo(10);
-        figuras[4]=new Circulo(50);
+        figuras[1] = new Rectangulo(10, 10);
+        figuras[2] = new Rectangulo(15, 11);
+        figuras[3] = new Circulo(10);
+        figuras[4] = new Circulo(50);
         for (int i = 0; i < figuras.length; i++) {
             System.out.println(figuras[i].getArea());
+
         }
+        int reparto = 0;
+        try {
+            reparto = repartir(100, 2);
+        } catch (Exception e) {
+            throw new RuntimeException(e.getMessage());
+        } finally {
+            System.out.println(reparto);
+        }
+
+    }
+
+    public static int repartir(int dinero, int personas) throws Exception {
+        if (personas < 1) {
+            throw (new Exception("No se puede dividir entre 0"));
+
+        } else {
+
+            return dinero / personas;
+        }
+
     }
 }
 
