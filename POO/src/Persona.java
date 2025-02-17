@@ -1,7 +1,7 @@
-public class Persona {
-    private String nombre;
-    private String dni;
-    private String telefono;
+public abstract class Persona {
+    protected String nombre;
+    protected String dni;
+    protected String telefono;
 
     public Persona() {
     }
@@ -10,6 +10,15 @@ public class Persona {
         this.nombre = nombre;
         this.dni = dni;
         this.telefono = telefono;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", dni='" + dni + '\'' +
+                ", telefono='" + telefono + '\'' +
+                '}';
     }
 
     public String getNombre() {

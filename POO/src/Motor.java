@@ -2,6 +2,22 @@ public class Motor {
     private int potencia;
     private String combustible;
 
+    public Motor() {
+    }
+
+    public Motor(int potencia, String combustible) {
+        this.potencia = potencia;
+        this.combustible = combustible;
+    }
+
+    @Override
+    public String toString() {
+        return "Motor{" +
+                "potencia=" + potencia +
+                ", combustible='" + combustible + '\'' +
+                '}';
+    }
+
     public int getPotencia() {
         return potencia;
     }

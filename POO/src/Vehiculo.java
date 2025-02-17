@@ -1,18 +1,21 @@
-public class Vehiculo {
-    private String marca;
-    private String modelo;
-    private String matricula;
-    private double precio;
+public abstract class Vehiculo {
+    protected String marca;
+    protected String modelo;
+    protected String matricula;
+    protected double precio;
+    protected Motor motor;
+    protected Propietario propietario;
 
+    public Vehiculo() {
+    }
 
-    public Vehiculo(String marca, String modelo, String matricula, double precio) {
+    public Vehiculo(String marca, String modelo, String matricula, double precio, Motor motor, Propietario propietario) {
         this.marca = marca;
         this.modelo = modelo;
         this.matricula = matricula;
         this.precio = precio;
-    }
-
-    public Vehiculo() {
+        this.motor = motor;
+        this.propietario = propietario;
     }
 
     public String getMarca() {
@@ -47,6 +50,21 @@ public class Vehiculo {
         this.precio = precio;
     }
 
+    public Motor getMotor() {
+        return motor;
+    }
+
+    public void setMotor(Motor motor) {
+        this.motor = motor;
+    }
+
+    public Propietario getPropietario() {
+        return propietario;
+    }
+
+    public void setPropietario(Propietario propietario) {
+        this.propietario = propietario;
+    }
 
     public String mostrarInformacion() {
         return "Vehiculo{" +
@@ -54,8 +72,8 @@ public class Vehiculo {
                 ", modelo='" + modelo + '\'' +
                 ", matricula='" + matricula + '\'' +
                 ", precio=" + precio +
+                ", motor=" + motor +
+                ", propietario=" + propietario +
                 '}';
     }
-
-
 }
