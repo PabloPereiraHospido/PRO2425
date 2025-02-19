@@ -7,7 +7,7 @@ import java.lang.Exception;
 
 public class Boletin3 {
 
-    private static int ejercicio1(int mes, int anho) {
+    private static int ponerFecha(int mes, int anho) {
         try {
             YearMonth y = YearMonth.of(anho, mes);
             int dias = y.lengthOfMonth();
@@ -18,7 +18,7 @@ public class Boletin3 {
         return 0;
     }
 
-    private static void ejercicio2(Scanner src) {
+    private static void ponerMes(Scanner src) {
         try {
             System.out.print("Introduce una fecha en formato dd/mm/aaaa: ");
             Scanner in = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class Boletin3 {
             int dia = Integer.parseInt(partes[0]);
             int mes1 = Integer.parseInt(partes[1]);
             int anho1 = Integer.parseInt(partes[2]);
-            int diasEnMes = ejercicio1(mes1, anho1);
+            int diasEnMes = ponerFecha(mes1, anho1);
 
             if (diasEnMes > 0 && dia >= 1 && dia <= diasEnMes) {
                 System.out.println("La fecha es válida.");
@@ -357,12 +357,12 @@ public class Boletin3 {
         }
     }
 
-    private static int ejercicio12(int n) {
+    private static int devolverDigitos(int n) {
         if (n < 10 && n > -10) {
             return 1;
         } else {
 
-            return 1 + ejercicio12(n / 10);
+            return 1 + devolverDigitos(n / 10);
         }
     }
 
@@ -562,7 +562,7 @@ public class Boletin3 {
         Point nuevoPunto = new Point(10, 10);
         System.out.println("Coordenada y del nuevo punto: " + nuevoPunto.y);
     }
-    
+
     public static void main(String[] args) {
 
         System.out.println("Introduce el número de ejercicio:");
@@ -574,11 +574,11 @@ public class Boletin3 {
                 int mes = src.nextInt();
                 System.out.println("Introduce el año:");
                 int anho = src.nextInt();
-                int dias = ejercicio1(mes, anho);
+                int dias = ponerFecha(mes, anho);
                 System.out.println("El mes " + mes + " del año " + anho + " tiene " + dias + " días.");
                 break;
             case 2:
-                ejercicio2(src);
+                ponerMes(src);
                 break;
             case 3:
                 determinarTipoTriangulo(src);
@@ -621,7 +621,7 @@ public class Boletin3 {
                 try {
                     System.out.println("introduce un numero entero :");
                     int n = src.nextInt();
-                    int digitos = ejercicio12(n);
+                    int digitos = devolverDigitos(n);
                     System.out.println("El número " + n + " tiene " + digitos + " dígitos.");
                 } catch (Exception e) {
                     System.out.println("Error: No bancamos las recursividad");
