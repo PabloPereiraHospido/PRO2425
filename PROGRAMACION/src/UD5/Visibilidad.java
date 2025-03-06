@@ -1,7 +1,4 @@
-package UD4;
-
-import UD5.Alumno;
-import UD5.Persona;
+package UD5;
 
 public class Visibilidad {
     public static void main(String[] args) {

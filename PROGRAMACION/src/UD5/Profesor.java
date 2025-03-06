@@ -10,6 +10,10 @@ public class Profesor extends Persona{
 
     public Profesor() {
     }
+
+    public Profesor(String profesor) {
+    }
+
     @Override
     public void trabajar(){
         System.out.println("Soy un profesor, mi tabajo es enseñar");

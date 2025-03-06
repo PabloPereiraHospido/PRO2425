@@ -2,18 +2,20 @@ package UD5;
 
 public class Teoria5 {
     public static void main(String[] args) {
-        Persona pablo = new Alumno();
+      /*  Persona pablo = new Alumno();
         pablo.setEdad(25);
         pablo.setNombre("Pablo");
         pablo.setApellido("Pereira");
         pablo.setDni(12345);
         pablo.setFechaNacimiento("1999-12-09");
 
+
+
         System.out.println(pablo.getEdad());
         System.out.println(pablo.getApellido());
         System.out.println(pablo.getDni());
         System.out.println(pablo.getFechaNacimiento());
-
+*/
         Persona maria;
         maria = new Profesor();
         Persona manuel = maria;

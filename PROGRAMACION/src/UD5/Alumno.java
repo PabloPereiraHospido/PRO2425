@@ -3,6 +3,13 @@ package UD5;
 public class Alumno extends Persona {
     private String clase;
 
+    public Alumno() {
+    }
+
+    public Alumno(String alumnos) {
+    }
+
+
     public String getClase() {
         return clase;
     }
