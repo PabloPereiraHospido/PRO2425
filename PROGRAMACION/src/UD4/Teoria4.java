@@ -28,7 +28,50 @@ public class Teoria4 {
         for (String s : mensajes) {
             System.out.println(s);
         }
+        double tabla1[][] = new double[3][2];
+        int tabla2[][] = new int[2][];
+        tabla2[0] = new int[2];
+        tabla2[1] = new int[3];
+        System.out.println("arrays");
+        System.out.println(tabla1.length);
+        System.out.println(tabla2.length);
+        System.out.println(tabla2[0].length);
+        System.out.println(tabla2[1].length);
+
+        double matriz1[][] = new double[4][4];
+        matriz1[0][0] = 1;
+        matriz1[0][1] = 1;
+        matriz1[0][2] = 1;
+        matriz1[0][3] = 1;
+        matriz1[1][0] = 0;
+        matriz1[1][1] = 1;
+        matriz1[1][2] = 0;
+        matriz1[1][3] = 0;
+        matriz1[2][0] = 0;
+        matriz1[2][1] = 1;
+        matriz1[2][2] = 1;
+        matriz1[2][3] = 0;
+        matriz1[3][0] = 0;
+        matriz1[3][1] = 0;
+        matriz1[3][2] = 0;
+        matriz1[3][3] = 1;
 
 
+        for (int fila = 0; fila < matriz1.length; fila++) {
+            for (int j = 0; j < matriz1[fila].length; j++) {
+                System.out.println(matriz1[fila][j] + "");
+
+            }
+            System.out.println();
+        }
+        //almacene e imprime por pantalla al alumnado de este aula
+
+        String aulunmos[][] = new String[4][6];
+        aulunmos[0][0]="pabloPar";
+        aulunmos[0][1]="nabil";
+        aulunmos[0][2]="hector";
+        aulunmos[0][3]="hector";
+        aulunmos[0][4]="carla";
+        aulunmos[0][5]="diego";
     }
 }
