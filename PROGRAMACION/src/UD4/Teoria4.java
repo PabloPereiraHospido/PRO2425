@@ -93,7 +93,7 @@ public class Teoria4 {
         aulunmos[3][2] = "fabian";
         aulunmos[3][3] = "ivan";
         aulunmos[3][4] = "vacio";
-        aulunmos[3][5] = "carla";
+        aulunmos[3][5] = "cristian";
 
 
         for (int fila = 0; fila < aulunmos.length; fila++) {
@@ -104,5 +104,42 @@ public class Teoria4 {
             System.out.println();
         }
 
+        Persona aula[][] = new Persona[5][6];
+        aula[0][0] = new Profesor("Victor");
+        aula[0][1] = new Alumno("pabloPar");
+        aula[0][2] = new Alumno("nabil");
+        aula[0][3] = new Alumno("carla");
+        aula[0][4] = new Alumno("diego");
+        aula[0][5] = new Alumno("africa");
+
+
+        aula[1][0] = new Alumno("pablo");
+        aula[1][1] = new Alumno("vacio");
+        aula[1][2] = new Alumno("liuber");
+        aula[1][3] = new Alumno("fabian");
+        aula[1][4] = new Alumno("vacio");
+        aula[1][5] = new Alumno("vacio");
+
+        aula[2][0] = new Alumno("vacio");
+        aula[2][1] = new Alumno("vacio");
+        aula[2][2] = new Alumno("andres");
+        aula[2][3] = new Alumno("vacio");
+        aula[2][4] = new Alumno("vacio");
+        aula[2][5] = new Alumno("vacio");
+
+        aula[3][0] = new Alumno("manuel");
+        aula[3][1] = new Alumno("vacio");
+        aula[3][2] = new Alumno("hernan");
+        aula[3][3] = new Alumno("ivan");
+        aula[3][4] = new Alumno("vacio");
+        aula[3][5] = new Alumno("cristian");
+
+        for (int fila = 0; fila < aula.length; fila++) {
+            for (int j = 0; j < aula[fila].length; j++) {
+                System.out.println(aula[fila][j] + "");
+
+            }
+            System.out.println();
+        }
     }
 }
