@@ -67,11 +67,42 @@ public class Teoria4 {
         //almacene e imprime por pantalla al alumnado de este aula
 
         String aulunmos[][] = new String[4][6];
-        aulunmos[0][0]="pabloPar";
-        aulunmos[0][1]="nabil";
-        aulunmos[0][2]="hector";
-        aulunmos[0][3]="hector";
-        aulunmos[0][4]="carla";
-        aulunmos[0][5]="diego";
+        aulunmos[0][0] = "pabloPar";
+        aulunmos[0][1] = "nabil";
+        aulunmos[0][2] = "hector";
+        aulunmos[0][3] = "carla";
+        aulunmos[0][4] = "diego";
+        aulunmos[0][5] = "africa";
+
+        aulunmos[1][0] = "pablo";
+        aulunmos[1][1] = "vacio";
+        aulunmos[1][2] = "liuber";
+        aulunmos[1][3] = "fabian";
+        aulunmos[1][4] = "vacio";
+        aulunmos[1][5] = "vacio";
+
+        aulunmos[2][0] = "vacio";
+        aulunmos[2][1] = "vacio";
+        aulunmos[2][2] = "andres";
+        aulunmos[2][3] = "vacio";
+        aulunmos[2][4] = "vacio";
+        aulunmos[2][5] = "vacio";
+
+        aulunmos[3][0] = "manuel";
+        aulunmos[3][1] = "vacio";
+        aulunmos[3][2] = "fabian";
+        aulunmos[3][3] = "ivan";
+        aulunmos[3][4] = "vacio";
+        aulunmos[3][5] = "carla";
+
+
+        for (int fila = 0; fila < aulunmos.length; fila++) {
+            for (int j = 0; j < aulunmos[fila].length; j++) {
+                System.out.println(aulunmos[fila][j] + "");
+
+            }
+            System.out.println();
+        }
+
     }
 }
