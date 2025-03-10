@@ -104,13 +104,14 @@ public class Teoria4 {
             System.out.println();
         }
 
-        Persona aula[][] = new Persona[5][6];
+        Persona aula[][] = new Persona[4][7];
         aula[0][0] = new Profesor("Victor");
         aula[0][1] = new Alumno("pabloPar");
         aula[0][2] = new Alumno("nabil");
-        aula[0][3] = new Alumno("carla");
-        aula[0][4] = new Alumno("diego");
-        aula[0][5] = new Alumno("africa");
+        aula[0][3] = new Alumno("hector");
+        aula[0][4] = new Alumno("carla");
+        aula[0][5] = new Alumno("diego");
+        aula[0][6] = new Alumno("africa");
 
 
         aula[1][0] = new Alumno("pablo");
@@ -120,12 +121,14 @@ public class Teoria4 {
         aula[1][4] = new Alumno("vacio");
         aula[1][5] = new Alumno("vacio");
 
+
         aula[2][0] = new Alumno("vacio");
         aula[2][1] = new Alumno("vacio");
         aula[2][2] = new Alumno("andres");
         aula[2][3] = new Alumno("vacio");
         aula[2][4] = new Alumno("vacio");
         aula[2][5] = new Alumno("vacio");
+
 
         aula[3][0] = new Alumno("manuel");
         aula[3][1] = new Alumno("vacio");
