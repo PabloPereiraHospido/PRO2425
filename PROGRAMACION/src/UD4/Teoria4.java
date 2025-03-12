@@ -144,5 +144,25 @@ public class Teoria4 {
             }
             System.out.println();
         }
+        int[] enteros1 = {1, 2};
+        Persona vladimir = new Alumno();
+        vladimir.setNombre("Vladimir");
+        int valor = 10;
+
+        modificador(vladimir, valor, enteros1);
+        vladimir.getNombre();
+        System.out.println(valor);
+        for (int a = 0; a < enteros.length; a++) {
+            System.out.println(enteros[a]);
+
+        }
+    }
+
+    public static void modificador(Persona vlad, int diez, int[] enteros1) {
+        vlad.setNombre("Vlad");
+        int i = diez * 10;
+        for (int a = 0; a < enteros1.length; a++) {
+            enteros1[a] *= 2;
+        }
     }
 }
