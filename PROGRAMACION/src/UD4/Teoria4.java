@@ -4,6 +4,10 @@ import UD5.Alumno;
 import UD5.Persona;
 import UD5.Profesor;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Teoria4 {
     public static void main(String[] args) {
 
@@ -156,6 +160,20 @@ public class Teoria4 {
             System.out.println(enteros[a]);
 
         }
+
+        String nombre[] = {"victor", "manolo", "carla"};
+        for (String nombre1 : nombre) {
+            System.out.println(nombre1);
+        }
+        Arrays.sort(nombre);
+        for (String nombre2 : nombre) {
+            System.out.println(nombre2);
+        }
+        Arrays.sort(nombre, Collections.reverseOrder());
+        for (String nombre3 : nombre) {
+            System.out.println(nombre3);
+        }
+
     }
 
     public static void modificador(Persona vlad, int diez, int[] enteros1) {
