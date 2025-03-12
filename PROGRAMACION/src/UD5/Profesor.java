@@ -1,11 +1,18 @@
 package UD5;
 
-public class Profesor extends Persona{
+import java.util.Comparator;
+
+public class Profesor extends Persona {
     Integer antiguedad;
 
     public Profesor(String nombre, String apellido, Integer antiguedad) {
         super(nombre, apellido);
         this.antiguedad = antiguedad;
+    }
+
+    @Override
+    public int compareTo(Persona o) {
+        return this.getNombre().compareTo(o.getNombre());
     }
 
     public Profesor() {
@@ -35,4 +42,7 @@ public class Profesor extends Persona{
     public void comer() {
         System.out.println(RAZA);
     }
-}
+
+
+    }
+

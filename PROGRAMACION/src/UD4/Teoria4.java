@@ -173,7 +173,14 @@ public class Teoria4 {
         for (String nombre3 : nombre) {
             System.out.println(nombre3);
         }
-
+        Arrays.sort(personas);
+        for (Persona personas1 : persona) {
+            System.out.println(personas1);
+        }
+        Arrays.sort(personas, Collections.reverseOrder());
+        for (Persona persona2 : personas) {
+            System.out.println(persona2);
+        }
     }
 
     public static void modificador(Persona vlad, int diez, int[] enteros1) {

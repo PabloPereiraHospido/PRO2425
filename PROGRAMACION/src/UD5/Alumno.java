@@ -1,6 +1,7 @@
 package UD5;
 
-public class Alumno extends Persona {
+
+public class Alumno extends Persona  {
     private String clase;
 
     public Alumno() {
@@ -9,6 +10,10 @@ public class Alumno extends Persona {
     public Alumno(String alumnos) {
     }
 
+    @Override
+    public int compareTo(Persona o) {
+        return 0;
+    }
 
     public String getClase() {
         return clase;
@@ -38,4 +43,6 @@ public class Alumno extends Persona {
     public void comer() {
 
     }
+
+
 }
