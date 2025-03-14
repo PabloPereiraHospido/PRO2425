@@ -1,4 +1,4 @@
-package UD5.capaNegocio;
+package ud5.capaNegocio;
 
 public class LineaDetalle {
     private Integer unidadesVendidas;

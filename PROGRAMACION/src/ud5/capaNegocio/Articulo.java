@@ -1,11 +1,11 @@
-package UD5.capaNegocio;
+package ud5.capaNegocio;
 
 public class Articulo {
     private int codigo;
     private String descripcion;
     private int precio;
     private int precioConIva;
-    private final double IVA = 0.21;
+    private static final double IVA = 0.21;
 
     public int getCodigo() {
         return codigo;
@@ -40,7 +40,7 @@ public class Articulo {
         return IVA;
     }
 
-    public Articulo() {
+    public Articulo() { //es el constructor vacio
     }
 
     @Override

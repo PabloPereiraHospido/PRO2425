@@ -103,11 +103,7 @@ public class Teoria2 {
         }
         int valor = 2;
         switch (valor) {
-            case 2:
-            case 4:
-            case 6:
-            case 8:
-            case 10:
+            case 2,4,6,8,10:
                 System.out.println("Es par");
                 break;
             default:

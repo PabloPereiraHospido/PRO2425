@@ -1,4 +1,4 @@
-package UD5;
+package ud5;
 
 import java.util.Date;
 
@@ -55,156 +55,136 @@ public class Coche {
     private String tipoDeConector;
     private boolean modoEcologico;
 
-
-    public String getMarca(){
+    public String getMarca() {
         return marca;
     }
-    public String getModelo(){
+
+    public String getModelo() {
         return modelo;
     }
-    public int getAnho(){
+
+    public int getAnho() {
         return anho;
     }
-    public double getPrecio(){
+
+    public double getPrecio() {
         return precio;
     }
-    public String getColor(){
+
+    public String getColor() {
         return color;
     }
-    public String getMatricula(){
+
+    public String getMatricula() {
         return matricula;
     }
-    public int getNumeroDePuertas(){
+
+    public int getNumeroDePuertas() {
         return numeroDePuertas;
     }
-    public String getTipoDeMotor(){
+
+    public String getTipoDeMotor() {
         return tipoDeMotor;
     }
-    public double getCilindrada(){
+
+    public double getCilindrada() {
         return cilindrada;
     }
-    public int getPotencia(){
+
+    public int getPotencia() {
         return potencia;
     }
-    public double getConsumo(){
+
+    public double getConsumo() {
         return consumo;
     }
-    public String getTransmision(){
+
+    public String getTransmision() {
         return transmision;
     }
-    public String getTraccion(){
+
+    public String getTraccion() {
         return traccion;
     }
-    public double getCapacidadDeposito(){
+
+    public double getCapacidadDeposito() {
         return capacidadDeposito;
     }
-    public int getAutonomia(){
+
+    public int getAutonomia() {
         return autonomia;
     }
-    public double getLongitud(){
+
+    public double getLongitud() {
         return longitud;
     }
-    public double getAnchura(){
+
+    public double getAnchura() {
         return anchura;
     }
-    public double getAltura(){
+
+    public double getAltura() {
         return altura;
     }
-    public int getPeso(){
+
+    public int getPeso() {
         return peso;
     }
-    public int getCapacidadMaletero(){
-        return peso;
+
+    public int getCapacidadMaletero() {
+        return capacidadMaletero;
     }
-    public int getAirbags(){
+
+    public int getAirbags() {
         return airbags;
     }
-    public String getClimatizacion(){
+
+    public String getClimatizacion() {
         return climatizacion;
     }
-    public String getSistemaDeSonido(){
+
+    public String getSistemaDeSonido() {
         return sistemaDeSonido;
     }
-    public boolean getPantallaTctil(){
-        return pantallaTactil;
-    }
-    public boolean getNavegadorGPS(){
-        return navegadorGPS;
-    }
-    public boolean getCamaraTrasera(){
-        return camaraTrasera;
-    }
-    public boolean getAsistenciaDeAparcamiento(){
-        return asistenciaDeAparcamiento;
-    }
-    public boolean getSensoresDeProximidad(){
-        return sensoresDeProximidad;
-    }
-    public boolean getFarosLED(){
-        return farosLED;
-    }
-    public boolean getTechoSolar(){
-        return techoSolar;
-    }
-    public boolean getControlDeCrucero(){
-        return controlDeCruzero;
-    }
-    public boolean getAsientosCalefactables(){
-        return asientosCalefactables;
-    }
-    public boolean getSistemaAntibloqueo(){
-        return sistemaAntibloqueo;
-    }
-    public boolean getControlDeEstabilidad(){
-        return controlDeEstabilidad;
-    }
-    public boolean getDetectorDeColision(){
-        return detectorDeColision;
-    }
-    public boolean getAsistencaDeCarril(){
-        return asistenciaDeCarril;
-    }
-    public boolean getFrenadoAutonomo(){
-        return frenadoAutonomo;
-    }
-    public int getKilometraje(){
+
+    public int getKilometraje() {
         return kilometraje;
     }
-    public Date getUltimaRevision(){
+
+    public Date getUltimaRevision() {
         return ultimaRevision;
     }
-    public double getNivelDeAceite(){
+
+    public double getNivelDeAceite() {
         return nivelDeAceite;
     }
-    public String getEstadoDeNeumaticos(){
+
+    public String getEstadoDeNeumaticos() {
         return estadoDeNeumaticos;
     }
-    public int getNumeroDeDuenosAnteriores(){
+
+    public int getNumeroDeDuenosAnteriores() {
         return numeroDeDuenosAnteriores;
     }
-    public String getTipoDeLlanta(){
+
+    public String getTipoDeLlanta() {
         return tipoDeLlanta;
     }
-    public boolean getPegatinas(){
-        return pegatinas;
-    }
-    public boolean getAlarmaPersonalizada(){
-        return alarmaPersonalizada;
-    }
-    public String getModificaciones(){
+
+    public String getModificaciones() {
         return modificaciones;
     }
-    public int getCapacidadBateria(){
+
+    public int getCapacidadBateria() {
         return capacidadBateria;
     }
-    public double getTiempoDeCarga(){
+
+    public double getTiempoDeCarga() {
         return tiempoDeCarga;
     }
-    public String getTipoDeConector(){
+
+    public String getTipoDeConector() {
         return tipoDeConector;
-    }
-    public boolean getModoEcologico(){
-        return modoEcologico;
     }
 
     public void setMarca(String marca) {

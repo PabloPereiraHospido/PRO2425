@@ -1,4 +1,4 @@
-package UD5;
+package ud5;
 
 public class Animal {
     public void mueve() {

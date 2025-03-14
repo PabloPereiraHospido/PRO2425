@@ -1,8 +1,8 @@
-package UD5;
+package ud5;
 
-import UD5.capaNegocio.Articulo;
-import UD5.capaNegocio.Cliente;
-import UD5.capaNegocio.Factura;
+import ud5.capaNegocio.Articulo;
+import ud5.capaNegocio.Cliente;
+import ud5.capaNegocio.Factura;
 
 import java.util.Scanner;
 
@@ -21,6 +21,10 @@ public class Boletin5 {
                 nintendoSwitch.setPrecio(235);
                 nintendoSwitch.getPrecio();
                 factura.setDescripcion("dia 17/01/2025");
+                break;
+            default:
+                System.out.println("estoy hasta los cojones del sonarQube");
+                break;
         }
     }
 }

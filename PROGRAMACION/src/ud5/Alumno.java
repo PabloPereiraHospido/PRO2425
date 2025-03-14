@@ -1,4 +1,4 @@
-package UD5;
+package ud5;
 
 
 public class Alumno extends Persona  {
@@ -7,7 +7,7 @@ public class Alumno extends Persona  {
     public Alumno() {
     }
 
-    public Alumno(String alumnos) {
+    public Alumno(String alumnos) { //method is empty
     }
 
     @Override
@@ -35,12 +35,12 @@ public class Alumno extends Persona  {
     }
 
     @Override
-    public void respirar() {
+    public void respirar() {//method is empty
 
     }
 
     @Override
-    public void comer() {
+    public void comer() { //method is empty
 
     }
 

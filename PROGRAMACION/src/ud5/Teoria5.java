@@ -1,21 +1,9 @@
-package UD5;
+package ud5;
 
 public class Teoria5 {
     public static void main(String[] args) {
-      /*  Persona pablo = new Alumno();
-        pablo.setEdad(25);
-        pablo.setNombre("Pablo");
-        pablo.setApellido("Pereira");
-        pablo.setDni(12345);
-        pablo.setFechaNacimiento("1999-12-09");
 
 
-
-        System.out.println(pablo.getEdad());
-        System.out.println(pablo.getApellido());
-        System.out.println(pablo.getDni());
-        System.out.println(pablo.getFechaNacimiento());
-*/
         Persona maria;
         maria = new Profesor();
         Persona manuel = maria;
@@ -34,13 +22,13 @@ public class Teoria5 {
         //maria.grupoSanguineo no deja al ser private
         //maria.telefono no deja al ser private
 
-        // Persona aurelia = new Profesor("Aurelia", "Ramirez");
+
 
         Persona aurelia2 = new Alumno();
         aurelia2.setNombre("Aurelia");
         aurelia2.setApellido("Ramirez");
 
-        // Persona manolo = new Alumno("Manolo", "Perez", 35, 12345, "12345.Y", "1999_01-01", "12345abx", "27003", "manolo@gmail.com", 12345, "a", Sexo.HOMBRE);
+
         Persona manolo2 = new Alumno();
         manolo2.setNombre("Manolo");
         manolo2.setApellido("Perez");
@@ -78,7 +66,7 @@ public class Teoria5 {
         System.out.println(vladimir.toString());
         Animal leo = new Animal();
         Animal maya = new Perro();
-        // Perro lola = (Perro) new Animal();
+
         leo.mueve();
         maya.mueve();
         ((Perro) maya).salta();

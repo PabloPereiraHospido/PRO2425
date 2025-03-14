@@ -47,6 +47,9 @@ public class Boletin22 {
             case 15:
                 ejercicio15(src);
                 break;
+            default:
+                System.out.println("ese numero como que no existe manin");
+                break;
         }
     }
 
@@ -97,18 +100,10 @@ public class Boletin22 {
         int entero = src.nextInt();
 
         switch (entero) {
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 9:
+            case 1, 3, 5, 7, 9:
                 System.out.println("es impar");
                 break;
-            case 2:
-            case 4:
-            case 6:
-            case 8:
-            case 10:
+            case 2, 4, 6, 8, 10:
                 System.out.println("Es par");
                 break;
             default:
@@ -172,24 +167,18 @@ public class Boletin22 {
                 int meses;
                 meses = 1;
                 switch (meses) {
-                    case 1:
-                    case 3:
-                    case 5:
-                    case 7:
-                    case 8:
-                    case 10:
-                    case 12:
+                    case 1, 3, 5, 7, 8, 10, 12:
                         System.out.println("tiene 31 dias");
                         break;
-                    case 4:
-                    case 6:
-                    case 9:
-                    case 11:
+                    case 4, 6, 9, 11:
                         System.out.println("tiene 30 dias");
                         break;
 
                     case 2:
                         System.out.println("tiene 28 dias");
+                        break;
+                    default:
+                        System.out.println(("como que ese mes no existe crack"));
                         break;
                 }
             }
@@ -198,7 +187,13 @@ public class Boletin22 {
 
     private static void ejercicio9(Scanner src) {
 
-        int ano, aa, bb, cc, d, e, f;
+        int ano;
+        int aa;
+        int bb;
+        int cc;
+        int d;
+        int e;
+        int f;
         ano = 12;
         aa = 0;
         bb = 1;
@@ -208,17 +203,17 @@ public class Boletin22 {
         f = 31;
 
         if (aa == ano % 19) {
-
+            System.out.println(5);
         } else if (bb == ano % 4) {
-
+            System.out.println(6);
         } else if (cc == ano % 7) {
-
+            System.out.println(3);
         } else if (d == (19 * aa + 24) % 30) {
-
+            System.out.println(12);
         } else if (e == (2 * bb + 4 * cc + 6 * d + 5) % 7) {
-
+            System.out.println(1);
         } else if (f == (22 + d + e)) {
-
+            System.out.println(2);
         }
     }
 
@@ -396,7 +391,9 @@ public class Boletin22 {
 
     private static void ejercicio15(Scanner src) {
 
-        int a, b, c;
+        int a;
+        int b;
+        int c;
         a = 0;
         b = 2;
         c = 1;
@@ -407,7 +404,8 @@ public class Boletin22 {
 
                     println("Solucion = " + ((double) (-c / b)));
         } else {
-            double x1, x2;
+            double x1;
+            double x2;
             int discriminante = b * b - 4 * a * c;
             if (discriminante >= 0) {
                 x1 = (-b + Math.
@@ -426,12 +424,8 @@ public class Boletin22 {
                 System.out.
 
                         println(parteReal);
-                System.out.
-
-                        println(x1);
-                System.out.
-
-                        println(x2);
+                System.out.println(x1);
+                System.out.println(x2);
             }
 
         }

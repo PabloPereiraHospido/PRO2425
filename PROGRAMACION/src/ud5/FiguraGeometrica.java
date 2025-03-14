@@ -1,15 +1,16 @@
-package UD5;
+package ud5;
 
 public abstract class FiguraGeometrica {
     private final String nombre;
-    abstract public double getArea();
+
+    public abstract double getArea();
 
 
-    private boolean mayorQue(FiguraGeometrica figura){
-        return this.getArea()>figura.getArea();
+    private boolean mayorQue(FiguraGeometrica figura) {
+        return this.getArea() > figura.getArea();
     }
 
-    public FiguraGeometrica(String nombre) {
+    protected FiguraGeometrica(String nombre) {
         this.nombre = nombre;
     }
 

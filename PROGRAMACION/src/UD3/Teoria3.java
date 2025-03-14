@@ -1,8 +1,6 @@
 package UD3;
 
 import java.awt.*;
-import java.math.BigInteger;
-import java.text.DecimalFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -11,7 +9,7 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Locale;
 import java.util.Random;
-import java.util.Scanner;
+
 
 public class Teoria3 {
 
@@ -82,7 +80,7 @@ public class Teoria3 {
 
     public static void main(String[] args) {
         for (int valor = 1; valor <= 2; valor++)
-            // imprimirTablaMultiplicar(valor);
+
             System.out.println(sumar(10, 10));
         System.out.println(hacerMedia(9, 8));
         imprimirPresentacion();
@@ -111,7 +109,7 @@ public class Teoria3 {
         String cadena1 = "programación";
         String cadena2 = "programación";
 
-        if (cadena1 == cadena2) {
+        if (cadena1.equals(cadena2)) {
             System.out.println("son iguales");
         } else {
             System.out.println("son diferentes");
@@ -119,7 +117,7 @@ public class Teoria3 {
 
         String cadena3 = new String("programación");
         String cadena4 = new String("ProgramacióN");
-        if (cadena3 == cadena4) {
+        if (cadena3.equals(cadena4)) {
             System.out.println("son iguales");
         } else {
             System.out.println("son diferentes");
@@ -133,12 +131,7 @@ public class Teoria3 {
         String resultado = "           hola" + "profe";
         System.out.println(resultado.trim());
 
-        /*Integer i = 5;
-        int aa = Integer.parseInt("5");
 
-        Boolean b1 = new Boolean(false);
-        Boolean c = new Boolean("trUe");
-        Boolean d = new Boolean("Non");*/
 
         String s = "5";
         int i1 = Integer.parseInt(s);
@@ -149,29 +142,7 @@ public class Teoria3 {
         float f = j.floatValue();
 
 
-      /*  Boolean estado=null;
-        boolean estado2=null;
 
-        Integer entero=null;
-        int entero2=null;
-
-       Scanner src=new Scanner(System.in);
-        System.out.println("introduce opcion");
-        int entrada;
-
-        if(src.hasNextInt()){
-            entrada=src.nextInt();
-            src.nextLine();
-        }else{
-            System.out.println("introduce un numero");
-        }
-        entrada=src.nextInt();
-        //llamariamos al ejercicio correspondiente
-        BigInteger n=new BigInteger("1");
-        BigInteger m=new BigInteger.ONE
-
-                DecimalFormat df=new DecimalFormat(".##")
-                        System.out.println(df.format(3.14159265));*/
         System.out.println("fecha actual" + LocalDate.now());
         System.out.println("Hora actual" + LocalTime.now());
         System.out.println("fecha y hora actual" + LocalDateTime.now());

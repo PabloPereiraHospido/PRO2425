@@ -156,26 +156,26 @@ public class Boletin23 {
     private static void ejercicio8(Scanner src) {
 
         System.out.println("Desde : ");
-        int Fahrenheit = src.nextInt();
+        int fahrenheit = src.nextInt();
         System.out.println("Hasta : ");
-        int Fahrenheit1 = src.nextInt();
-        int Celsius = 0;
-        int Kelvin = 0;
-        int Rankine = 0;
-        if (Fahrenheit < Fahrenheit1)
+        int fahrenheit1 = src.nextInt();
+        int celsius = 0;
+        int kelvin = 0;
+        int rankine = 0;
+        if (fahrenheit < fahrenheit1)
 
-            for (int i = Fahrenheit; i <= Fahrenheit1; i++) {
-                Celsius = (i - 32) * 5 / 9;
-                Kelvin = Celsius + 273;
-                Rankine = i + 459;
-                System.out.println("i: " + i + " Celsius: " + Celsius + " Kelvin: " + Kelvin + " Rankine: " + Rankine);
+            for (int i = fahrenheit; i <= fahrenheit1; i++) {
+                celsius = (i - 32) * 5 / 9;
+                kelvin = celsius + 273;
+                rankine = i + 459;
+                System.out.println("i: " + i + " Celsius: " + celsius + " Kelvin: " + kelvin + " Rankine: " + rankine);
             }
-        else if (Fahrenheit > Fahrenheit1) {
-            for (int i = Fahrenheit1; i <= Fahrenheit; i++) {
-                Celsius = (i - 32) * 5 / 9;
-                Kelvin = Celsius + 273;
-                Rankine = i + 459;
-                System.out.println("i: " + i + " Celsius: " + Celsius + " Kelvin: " + Kelvin + " Rankine: " + Rankine);
+        else if (fahrenheit > fahrenheit1) {
+            for (int i = fahrenheit1; i <= fahrenheit; i++) {
+                celsius = (i - 32) * 5 / 9;
+                kelvin = celsius + 273;
+                rankine = i + 459;
+                System.out.println("i: " + i + " Celsius: " + celsius + " Kelvin: " + kelvin + " Rankine: " + rankine);
             }
 
         }

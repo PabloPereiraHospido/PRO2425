@@ -3,15 +3,14 @@ package UD3;
 import java.awt.*;
 import java.time.YearMonth;
 import java.util.Scanner;
-import java.lang.Exception;
+
 
 public class Boletin3 {
 
     private static int ponerFecha(int mes, int anho) {
         try {
             YearMonth y = YearMonth.of(anho, mes);
-            int dias = y.lengthOfMonth();
-            return dias;
+            return y.lengthOfMonth();
         } catch (Exception e) {
             System.out.println("Error: Mes o año invalido ");
         }
@@ -127,7 +126,11 @@ public class Boletin3 {
 
         texto = texto.toLowerCase();
 
-        int contadorA = 0, contadorE = 0, contadorI = 0, contadorO = 0, contadorU = 0;
+        int contadorA = 0;
+        int contadorE = 0;
+        int contadorI = 0;
+        int contadorO = 0;
+        int contadorU = 0;
         int totalVocales = 0;
 
 
@@ -149,6 +152,9 @@ public class Boletin3 {
                         break;
                     case 'u':
                         contadorU++;
+                        break;
+                    default:
+                        System.out.println("aprende las vocales cruck");
                         break;
                 }
             }
@@ -204,7 +210,7 @@ public class Boletin3 {
 
             if (partes.length != 3) {
                 System.out.println("La hora es inválida. Formato incorrecto.");
-                continue;
+
             }
 
             try {
@@ -287,7 +293,7 @@ public class Boletin3 {
 
             if (opcion < 1 || opcion > 4) {
                 System.out.println("Opción inválida. Intenta de nuevo.");
-                continue;
+
             }
 
 
@@ -303,6 +309,9 @@ public class Boletin3 {
                     break;
                 case 3:
                     System.out.println("Hexadecimal: " + Integer.toHexString(numero).toUpperCase());
+                    break;
+                default:
+                    System.out.println("aprende binario bro");
                     break;
             }
         }
@@ -501,7 +510,7 @@ public class Boletin3 {
         Scanner src = new Scanner(System.in);
         String texto = src.nextLine();
         try {
-            texto = texto.replaceAll(" ", "");
+            texto = texto.replace(" ", "");
             if (texto.length() <= 1) {
                 return true;
             } else {
@@ -529,7 +538,7 @@ public class Boletin3 {
         return false;
     }
 
-    private static void torresHanoiRecursivo(int n, char origen, char destino, char auxiliar) {
+    private static void torresHanoiRecursivo(int n, char auxiliar, char destino, char origen) {
         try {
             if (n == 1) {
                 System.out.println("Mover disco 1 de " + origen + " a " + destino);
@@ -543,7 +552,7 @@ public class Boletin3 {
         }
     }
 
-    private static void completarCódigo() {
+    private static void completarCodigo() {
 
         Point puntoOrigen = new Point(23, 94);
 
@@ -705,7 +714,7 @@ public class Boletin3 {
                 torresHanoiRecursivo(discos, 'A', 'C', 'B');
                 break;
             case 23:
-                completarCódigo();
+                completarCodigo();
                 break;
             default:
                 System.out.println("El número de ejercicio es incorrecto.");

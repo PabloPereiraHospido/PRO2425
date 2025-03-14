@@ -1,6 +1,6 @@
 package UD1;
 
-import java.security.spec.RSAOtherPrimeInfo;
+
 
 public class Teoria1 {
     public static void main(String args[]) {

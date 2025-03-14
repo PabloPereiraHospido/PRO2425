@@ -26,26 +26,23 @@ public class EjerciciosRefuerzo {
         System.out.println("introduce el numero de hijos : ");
         int numHijos = sc.nextInt();
         switch (numHijos) {
-            case 1:
-            case 2:
+            case 1, 2:
                 System.out.println("se retiene el 20% del salario");
                 break;
-            case 3:
-            case 4:
-            case 5:
+            case 3,4,5:
                 System.out.println("se retiene el 15% del salario");
                 break;
-            case 6:
-            case 7:
+            case 6,7:
                 System.out.println("se retiene el 10% del salario");
                 break;
-            case 8:
-            case 9:
+            case 8,9:
                 System.out.println("se retieene el 5% del salario");
                 break;
             case 10:
                 System.out.println("no se retiene el salario");
                 break;
+            default:
+                System.out.println("el sonar este quiere que me sucide");
         }
         Scanner b = new Scanner(System.in);
 
@@ -68,6 +65,6 @@ public class EjerciciosRefuerzo {
         }
         resto = nunerador;
         System.out.println("cociente " + denominador);
-       // System.out.println(" cociente " + nunerador - (denominador * cociente));
+
     }
 }

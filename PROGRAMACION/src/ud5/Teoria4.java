@@ -1,4 +1,4 @@
-package UD5;
+package ud5;
 
 public class Teoria4 {
     public static void main(String[] args) {

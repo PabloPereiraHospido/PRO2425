@@ -1,6 +1,4 @@
-package UD5;
-
-import java.util.Comparator;
+package ud5;
 
 public class Profesor extends Persona {
     Integer antiguedad;
@@ -18,7 +16,7 @@ public class Profesor extends Persona {
     public Profesor() {
     }
 
-    public Profesor(String profesor) {
+    public Profesor(String profesor) {//constructor vacio
     }
 
     @Override
@@ -34,7 +32,7 @@ public class Profesor extends Persona {
     }
 
     @Override
-    public void respirar() {
+    public void respirar() {//constructor vacio
 
     }
 

@@ -1,4 +1,4 @@
-package UD5.capaNegocio;
+package ud5.capaNegocio;
 
 public class Cliente {
     private String nombre;

@@ -1,4 +1,4 @@
-package UD5;
+package ud5;
 
 
 import java.security.InvalidParameterException;
@@ -127,14 +127,14 @@ public abstract class Persona implements SerHumano, Comparable<Persona> {
     public void setSexo(Sexo sexo) {
         this.sexo = sexo;
     }
-public Persona(){
+protected Persona(){
 
 }
-    public Persona(String nombre, String apellido) {
+    protected Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
     }
-    public Persona(String nombre, String apellido, int edad,int dni, String nif,String fechaNacimiento, String cuentaBancaria,String direccionPostal,String email,Integer telefono,String grupoSanguineo, Sexo sexo){
+    protected Persona(String nombre, String apellido, int edad,int dni, String nif,String fechaNacimiento, String cuentaBancaria,String direccionPostal,String email,Integer telefono,String grupoSanguineo, Sexo sexo){
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad=edad;

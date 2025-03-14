@@ -1,4 +1,4 @@
-package UD5;
+package ud5;
 
 public interface Comida {
     enum PlatoPrincipal implements Comida {

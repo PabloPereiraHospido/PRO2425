@@ -1,4 +1,4 @@
-package UD5;
+package ud5;
 
 public interface SemiHumano extends SerHumano {
 }

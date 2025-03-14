@@ -1,10 +1,9 @@
 package UD4;
 
-import UD5.Alumno;
-import UD5.Persona;
-import UD5.Profesor;
+import ud5.Alumno;
+import ud5.Persona;
+import ud5.Profesor;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
 

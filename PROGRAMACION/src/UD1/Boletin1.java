@@ -93,7 +93,7 @@ public class Boletin1 {
 
         //ejercicio 8
 
-        int q = 2;
+        int q = 2; //no se porque no detecta que se esta usando
         int n = 10;
 
         System.out.println(q = ++n * 3);
@@ -121,13 +121,13 @@ public class Boletin1 {
 
         int p = 50;
 
-        System.out.println(p *= +8);
+        System.out.println(p *= +8);//no detecta que es una multiplicacion
 
         byte variableByte;
 
         variableByte = (byte) p; // haciendo el casting
 
-        System.out.println(variableByte);  // el numero no coincide ya que el byte no puede contener todo el nunero
+        System.out.println(variableByte);  // el numero no coincide ya que el byte no puede contener numero
 
 
         // ejercicio 12
@@ -141,7 +141,8 @@ public class Boletin1 {
 
         //ejercicio 13
         double miDoble2 = 9.78d;
-        int mInt = (int) miDoble2;
+        int mInt;
+        mInt = (int) miDoble2;
         System.out.println(miDoble2);
         System.out.println(miInt);
 
@@ -203,7 +204,9 @@ public class Boletin1 {
 
         //ejercicio 17
 
-        int nn = 10, yy = 4, v = 2;
+        int nn = 10;
+        int yy = 4;
+        int v = 2;
         double k;
 
         k = nn / yy;
@@ -277,7 +280,9 @@ public class Boletin1 {
         Scanner scanner = new Scanner(System.in);
 
         // Declarar las variables para los tres números
-        int num1, num2, num3;
+        int num1;
+        int num2;
+        int num3;
 
         // Solicitar al usuario que ingrese los tres números
         System.out.print("Introduce el primer número entero: ");
@@ -299,7 +304,9 @@ public class Boletin1 {
         Scanner scanner2 = new Scanner(System.in);
 
         // Declarar las variables para los tres números reales
-        double num111, num222, num333;
+        double num111;
+        double num222;
+        double num333;
 
         // Solicitar al usuario que ingrese los tres números reales
         System.out.print("Introduce el primer número real: ");

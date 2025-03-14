@@ -25,7 +25,9 @@ y al no ser igual a true da false
         se invierte el primer true lo que seria false and false, dando como resultado false
         por ultimo da false debido a que false es igual a false
          */
-                int i = 1, j = 0, k = -1;
+                int i = 1;
+                int j = 0;
+                int k = -1;
                 boolean resultado = i + k <= j - k * 3 && k >= 2;
                 System.out.println(resultado);
         /*
@@ -35,7 +37,9 @@ y al no ser igual a true da false
         al comparar el 4 con el cero da false ya que es mayor que cero
         asi que sabiendo que el resutado final es false, se deja de hacer la ultima comprobacion
          */
-                int ii = 3, jj = 2, kk = -1;
+                int ii = 3;
+                int jj = 2;
+                int kk = -1;
                 boolean resultado2 = ii == 3 || jj <= 2 && kk > 0;
                 System.out.println(resultado2);
         /*
@@ -49,7 +53,10 @@ y al no ser igual a true da false
         es verdadero ya que aunque la primera parte sea falsa,la segunda se vuelve verdadero al llegar
         al 5 o superarlo,, lo cual ocurre, y con el or en medio en este caso es true
          */
-                double x = 1, y = 4, z = 10, PI = 3.1416;
+                double x = 1;
+                int y = 4;
+                int z = 10;
+               final int PI = 3.1416;
                 boolean resultado4 = PI * x * x > y || 2 * PI * x <= z;
                 boolean resultado5 = x > 3 && (y == 4 || x + y <= z);
                 System.out.println(resultado4);
@@ -118,14 +125,14 @@ por otro lado, el sgundo enunciado es falso por que todas sus condiciones son fa
 
                 // Pedir el número máximo de opciones del menú (N)
                 System.out.print("Introduce el número máximo de opciones del menú (N): ");
-                int N = scanner2.nextInt();
+                int n = scanner2.nextInt();
 
                 // Pedir al usuario que introduzca su opción
-                System.out.print("Introduce una opción del menú (1 a " + N + "): ");
+                System.out.print("Introduce una opción del menú (1 a " + n + "): ");
                 int opcion = scanner2.nextInt();
 
                 // Verificar si la opción es válida
-                if (opcion >= 1 && opcion <= N) {
+                if (opcion >= 1 && opcion <= n) {
                     System.out.println("La opción " + opcion + " es válida.");
                 } else {
                     System.out.println("La opción " + opcion + " no es válida.");

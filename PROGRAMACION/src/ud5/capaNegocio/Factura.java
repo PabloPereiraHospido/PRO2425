@@ -1,4 +1,4 @@
-package UD5.capaNegocio;
+package ud5.capaNegocio;
 
 public class Factura {
     private static int contador = 0;
