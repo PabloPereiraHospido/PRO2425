@@ -56,7 +56,7 @@ y al no ser igual a true da false
                 double x = 1;
                 int y = 4;
                 int z = 10;
-               final int PI = 3.1416;
+               final double PI = 3.1416;
                 boolean resultado4 = PI * x * x > y || 2 * PI * x <= z;
                 boolean resultado5 = x > 3 && (y == 4 || x + y <= z);
                 System.out.println(resultado4);

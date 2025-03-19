@@ -20,17 +20,17 @@ public class Boletin1 {
 
         //ejercicio 2
 
-   /*
-   María no es válido por el acento
-   Salto_Mortal no es válido debido al subrayado
-   "datos" no es válido ya que empieza por comillas
-   sueldo bruto no es válido debido al espacio
-   cu_1 no es válido por el subrayado
-   58 no es válido ya que comienza por un dígito
-   salto-mortal no es valido por el guion
-   if no es valido ya que es una palabra reservada del sistema java
-   año no es válido por la ñ
-    */
+      /*
+      María no es válido por el acento
+      Salto_Mortal no es válido debido al subrayado
+      "datos" no es válido ya que empieza por comillas
+       sueldo bruto no es válido debido al espacio
+       cu_1 no es válido por el subrayado
+       58 no es válido ya que comienza por un dígito
+       salto-mortal no es valido por el guion
+       if no es valido ya que es una palabra reservada del sistema java
+       año no es válido por la ñ
+       */
 
         // ejercicio 3
 
@@ -53,7 +53,7 @@ public class Boletin1 {
         System.out.println("total=" + total);
 
 
-// ejercicio 5
+        // ejercicio 5
 
         int d = 5;    // declaracion de la primera variable
         int f = 10;   // declaracion de la segunda variable
@@ -121,13 +121,13 @@ public class Boletin1 {
 
         int p = 50;
 
-        System.out.println(p *= +8);//no detecta que es una multiplicacion
+        System.out.println(p *= +8); //no detecta que es una multiplicacion
 
         byte variableByte;
 
         variableByte = (byte) p; // haciendo el casting
 
-        System.out.println(variableByte);  // el numero no coincide ya que el byte no puede contener numero
+        System.out.println(variableByte);  // el numero no coincide ya que el byte no puede tener numero
 
 
         // ejercicio 12
@@ -275,7 +275,7 @@ public class Boletin1 {
         System.out.println("División real de var2 por 3: " + divisionReal);
         System.out.println("Parte entera de var3 dividido por var4: " + parteEntera);
         System.out.println("Resto de var1 dividido por var2: " + resto);
-//ejercicio 20
+        //ejercicio 20
 
         Scanner scanner = new Scanner(System.in);
 

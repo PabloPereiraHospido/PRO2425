@@ -1,5 +1,9 @@
 package ud5.capaNegocio;
 
+/**
+ * @author perhospab
+ * @summary ejercicio code
+ */
 public class Articulo {
     private int codigo;
     private String descripcion;
@@ -36,7 +40,7 @@ public class Articulo {
         return precioConIva;
     }
 
-    public double getIVA() {
+    public double getIva() {
         return IVA;
     }
 
@@ -45,12 +49,19 @@ public class Articulo {
 
     @Override
     public String toString() {
-        return "Articulo{" +
-                "codigo=" + codigo +
-                ", descripcion='" + descripcion + '\'' +
-                ", precio=" + precio +
-                ", precioConIva=" + precioConIva +
-                ", IVA=" + IVA +
+        return "Articulo{"
+                +
+                "codigo=" + codigo
+                +
+                ", descripcion='" + descripcion
+                + '\''
+                +
+                ", precio=" + precio
+                +
+                ", precioConIva=" + precioConIva
+                +
+                ", IVA=" + IVA
+                +
                 '}';
     }
 }
