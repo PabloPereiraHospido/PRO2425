@@ -42,10 +42,23 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "nombre='" + nombre + '\'' +
-                ", dni=" + dni +
-                ", nif='" + nif + '\'' +
+        return "Cliente{"
+                +
+                "nombre='"
+                +
+                nombre
+                +
+                '\''
+                +
+                ", dni="
+                +
+                dni
+                +
+                ", nif='"
+                +
+                nif
+                + '\''
+                +
                 '}';
     }
 }

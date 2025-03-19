@@ -40,10 +40,20 @@ public class LineaDetalle {
 
     @Override
     public String toString() {
-        return "LineaDetalle{" +
-                "unidadesVendidas=" + unidadesVendidas +
-                ", precioUnitario=" + precioUnitario +
-                ", precioTotal=" + precioTotal +
+        return "LineaDetalle{"
+                +
+                "unidadesVendidas="
+                +
+                unidadesVendidas
+                +
+                ", precioUnitario="
+                +
+                precioUnitario
+                +
+                ", precioTotal="
+                +
+                precioTotal
+                +
                 '}';
     }
 

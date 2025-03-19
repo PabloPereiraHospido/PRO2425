@@ -23,7 +23,6 @@ public class Teoria5 {
         //maria.telefono no deja al ser private
 
 
-
         Persona aurelia2 = new Alumno();
         aurelia2.setNombre("Aurelia");
         aurelia2.setApellido("Ramirez");

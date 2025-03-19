@@ -162,7 +162,7 @@ public class Boletin23 {
         int celsius = 0;
         int kelvin = 0;
         int rankine = 0;
-        if (fahrenheit < fahrenheit1)
+        if (fahrenheit < fahrenheit1) {
 
             for (int i = fahrenheit; i <= fahrenheit1; i++) {
                 celsius = (i - 32) * 5 / 9;
@@ -170,7 +170,7 @@ public class Boletin23 {
                 rankine = i + 459;
                 System.out.println("i: " + i + " Celsius: " + celsius + " Kelvin: " + kelvin + " Rankine: " + rankine);
             }
-        else if (fahrenheit > fahrenheit1) {
+        } else if (fahrenheit > fahrenheit1) {
             for (int i = fahrenheit1; i <= fahrenheit; i++) {
                 celsius = (i - 32) * 5 / 9;
                 kelvin = celsius + 273;

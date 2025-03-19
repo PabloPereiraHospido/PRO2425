@@ -5,7 +5,8 @@ public class Perro  extends Animal{
     public void mueve() {
         System.out.println("Perro corriendo");
     }
-public void salta(){
+
+    public void salta(){
     System.out.println("Perro saltando");
 }
 }

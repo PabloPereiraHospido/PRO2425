@@ -324,19 +324,16 @@ public class Boletin22 {
         int numeroSerie = src.nextInt();
 
 
-        boolean esDefectuoso = (numeroSerie >= 14681 && numeroSerie <= 15681) ||
+        boolean esDefectuoso = (numeroSerie >= 14681 && numeroSerie <= 15681)
+                ||
                 (numeroSerie >= 70001 && numeroSerie <= 79999) ||
                 (numeroSerie >= 88888 && numeroSerie <= 111111);
 
 
         if (esDefectuoso) {
-            System.out.
-
-                    println("El producto con número de serie " + numeroSerie + " es defectuoso.");
+            System.out.println("El producto con número de serie " + numeroSerie + " es defectuoso.");
         } else {
-            System.out.
-
-                    println("El producto con número de serie " + numeroSerie + " NO es defectuoso.");
+            System.out.println("El producto con número de serie " + numeroSerie + " NO es defectuoso.");
         }
     }
 

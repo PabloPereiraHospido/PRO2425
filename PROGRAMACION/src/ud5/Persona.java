@@ -19,7 +19,6 @@ public abstract class Persona implements SerHumano, Comparable<Persona> {
     private Sexo sexo;
 
 
-
     public String getNombre() {
         return nombre;
     }
@@ -127,46 +126,103 @@ public abstract class Persona implements SerHumano, Comparable<Persona> {
     public void setSexo(Sexo sexo) {
         this.sexo = sexo;
     }
-protected Persona(){
 
-}
+    protected Persona () {
+
+    }
+
     protected Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
     }
-    protected Persona(String nombre, String apellido, int edad,int dni, String nif,String fechaNacimiento, String cuentaBancaria,String direccionPostal,String email,Integer telefono,String grupoSanguineo, Sexo sexo){
+
+    protected Persona(String nombre, String apellido, int edad, int dni, String nif, String fechaNacimiento, String cuentaBancaria, String direccionPostal, String email, Integer telefono, String grupoSanguineo, Sexo sexo) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.edad=edad;
-        this.dni=dni;
-        this.nif=nif;
-        this.fechaNacimiento=fechaNacimiento;
-        this.cuentaBancaria=cuentaBancaria;
-        this.direccionPostal=direccionPostal;
-        this.email=email;
-        this.telefono=telefono;
-        this.grupoSanguineo=grupoSanguineo;
-        this.sexo=sexo;
+        this.edad = edad;
+        this.dni = dni;
+        this.nif = nif;
+        this.fechaNacimiento = fechaNacimiento;
+        this.cuentaBancaria = cuentaBancaria;
+        this.direccionPostal = direccionPostal;
+        this.email = email;
+        this.telefono = telefono;
+        this.grupoSanguineo = grupoSanguineo;
+        this.sexo = sexo;
     }
-    public void trabajar(){
+
+    public void trabajar() {
         System.out.println("Estoy trabajando");
     }
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", edad=" + edad +
-                ", dni=" + dni +
-                ", nif='" + nif + '\'' +
-                ", fechaNacimiento='" + fechaNacimiento + '\'' +
-                ", cuentaBancaria='" + cuentaBancaria + '\'' +
-                ", direccionPostal='" + direccionPostal + '\'' +
-                ", email='" + email + '\'' +
-                ", telefono=" + telefono +
-                ", grupoSanguineo='" + grupoSanguineo + '\'' +
-                ", sexo=" + sexo +
+        return "Persona{"
+                +
+                "nombre='"
+                +
+                nombre
+                +
+                '\''
+                +
+                ", apellido='"
+                +
+                apellido
+                +
+                '\''
+                +
+                ", edad="
+                +
+                edad
+                +
+                ", dni="
+                +
+                dni
+                +
+                ", nif='"
+                +
+                nif
+                +
+                '\''
+                +
+                ", fechaNacimiento='"
+                +
+                fechaNacimiento
+                +
+                '\''
+                +
+                ", cuentaBancaria='"
+                +
+                cuentaBancaria
+                +
+                '\''
+                +
+                ", direccionPostal='"
+                +
+                direccionPostal
+                +
+                '\''
+                +
+                ", email='"
+                +
+                email
+                +
+                '\''
+                +
+                ", telefono="
+                +
+                telefono
+                +
+                ", grupoSanguineo='"
+                +
+                grupoSanguineo
+                +
+                '\''
+                +
+                ", sexo="
+                +
+                sexo
+                +
                 '}';
     }
 }

@@ -1,11 +1,12 @@
 package UD4;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 import ud5.Alumno;
 import ud5.Persona;
 import ud5.Profesor;
 
-import java.util.Arrays;
-import java.util.Collections;
 
 public class Teoria4 {
     public static void main(String[] args) {

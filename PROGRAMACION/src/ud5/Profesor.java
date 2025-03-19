@@ -3,6 +3,9 @@ package ud5;
 public class Profesor extends Persona {
     Integer antiguedad;
 
+    public Profesor(String profesor) {//constructor vacio
+    }
+
     public Profesor(String nombre, String apellido, Integer antiguedad) {
         super(nombre, apellido);
         this.antiguedad = antiguedad;
@@ -16,8 +19,6 @@ public class Profesor extends Persona {
     public Profesor() {
     }
 
-    public Profesor(String profesor) {//constructor vacio
-    }
 
     @Override
     public void trabajar(){
@@ -26,8 +27,12 @@ public class Profesor extends Persona {
 
     @Override
     public String toString() {
-        return "Profesor{" +
-                "antiguedad=" + antiguedad +
+        return "Profesor{"
+                +
+                "antiguedad="
+                +
+                antiguedad
+                +
                 '}';
     }
 

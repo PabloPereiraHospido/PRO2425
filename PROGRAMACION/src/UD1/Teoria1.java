@@ -1,7 +1,6 @@
 package UD1;
 
 
-
 public class Teoria1 {
     public static void main(String args[]) {
 
@@ -67,24 +66,24 @@ public class Teoria1 {
         System.out.println("vaLor de float" + ff);
 
         //Cadenas
-        System.out.println("vaLor de float" + ff+ "y el valor de long es" +ll);
+        System.out.println("vaLor de float" + ff + "y el valor de long es" + ll);
 
-        int num1=5;
-        int num2=7;
-        System.out.println("la suma de"+num1+num2);
-        System.out.println("la suma de"+(num1+num2));
-        System.out.println(num1+num2+ "la suma de");
+        int num1 = 5;
+        int num2 = 7;
+        System.out.println("la suma de" + num1 + num2);
+        System.out.println("la suma de" + (num1 + num2));
+        System.out.println(num1 + num2 + "la suma de");
 
-        int aa=50;
-        byte bb=(byte) aa;  // casting se pone entre parentesis la el tipo al que lo queremos pasar
+        int aa = 50;
+        byte bb = (byte) aa;  // casting se pone entre parentesis la el tipo al que lo queremos pasar
 
-        double ddd=100.04;
-                long lll= (long)ddd;
-                int iii= (int) lll;
+        double ddd = 100.04;
+        long lll = (long) ddd;
+        int iii = (int) lll;
 
-        System.out.println("valor double"+ ddd);
+        System.out.println("valor double" + ddd);
         System.out.println("valor long" + lll);
-        System.out.println("valor int"+ iii);
+        System.out.println("valor int" + iii);
 
 
     }

@@ -16,8 +16,14 @@ public abstract class FiguraGeometrica {
 
     @Override
     public String toString() {
-        return "FiguraGeometrica{" +
-                "nombre='" + nombre + '\'' +
+        return "FiguraGeometrica{"
+                +
+                "nombre='"
+                +
+                nombre
+                +
+                '\''
+                +
                 '}';
     }
 }

@@ -17,9 +17,9 @@ public class Teoria4 {
                 color = Semaforo.AMBAR;
                 break;
         }
-        Numero n= Numero.DOS;
+        Numero n = Numero.DOS;
         System.out.println(n.getValue());
-        Comida comida=Comida.PlatoPrincipal.BACALAO;
-        comida=Comida.Postre.HELADO;
+        Comida comida = Comida.PlatoPrincipal.BACALAO;
+        comida = Comida.Postre.HELADO;
     }
 }

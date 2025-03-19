@@ -132,7 +132,6 @@ public class Teoria3 {
         System.out.println(resultado.trim());
 
 
-
         String s = "5";
         int i1 = Integer.parseInt(s);
 
@@ -140,7 +139,6 @@ public class Teoria3 {
         s = j.toString();
 
         float f = j.floatValue();
-
 
 
         System.out.println("fecha actual" + LocalDate.now());
@@ -192,10 +190,10 @@ public class Teoria3 {
 
         System.out.println(fechaConHora.format(DateTimeFormatter.ofPattern("'Hoy es' EEEE dd 'de' MMMM 'de' yyyy 'y son las' HH:mm:ss")
                 .withLocale(new Locale("es", "ES"))));
-        String idiomaLocal=System.getProperty("user.language");
-        String paisLocal=System.getProperty("user.country");
+        String idiomaLocal = System.getProperty("user.language");
+        String paisLocal = System.getProperty("user.country");
         System.out.println(fechaConHora.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT)
-                .withLocale(new Locale(idiomaLocal,paisLocal))));
+                .withLocale(new Locale(idiomaLocal, paisLocal))));
     }
 }
 

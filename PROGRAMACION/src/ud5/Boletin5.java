@@ -14,8 +14,8 @@ public class Boletin5 {
         switch (ejercicios) {
             case 1:
                 Cliente mario = new Cliente();
-                Articulo nintendoSwitch=new Articulo();
-                Factura factura = new Factura("nintendo switch",235);
+                Articulo nintendoSwitch = new Articulo();
+                Factura factura = new Factura("nintendo switch", 235);
 
                 mario.setNombre("Mario");
                 nintendoSwitch.setPrecio(235);
