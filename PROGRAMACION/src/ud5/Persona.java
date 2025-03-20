@@ -19,6 +19,8 @@ public abstract class Persona implements SerHumano, Comparable<Persona> {
     private Sexo sexo;
 
 
+
+
     public String getNombre() {
         return nombre;
     }
@@ -131,7 +133,7 @@ public abstract class Persona implements SerHumano, Comparable<Persona> {
 
     }
 
-    protected Persona(String nombre, String apellido) {
+    public Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
     }
@@ -224,5 +226,21 @@ public abstract class Persona implements SerHumano, Comparable<Persona> {
                 sexo
                 +
                 '}';
+    }
+
+
+    @Override
+    public int compareTo(Persona o) {
+        return 0;
+    }
+
+    @Override
+    public void respirar() {
+
+    }
+
+    @Override
+    public void comer() {
+
     }
 }
