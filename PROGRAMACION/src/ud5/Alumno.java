@@ -15,11 +15,6 @@ public class Alumno extends Persona {
     public Alumno(String alumnos) { //method is empty
     }
 
-    public Alumno(String nombre, String apellido) {
-        super(nombre, apellido);
-        this.clase = clase;
-    }
-
     @Override
     public int compareTo(Persona o) {
         return 0;
