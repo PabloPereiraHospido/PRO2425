@@ -5,6 +5,7 @@ import UD5.Persona;
 import UD5.Profesor;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -181,6 +182,8 @@ public class Teoria4 {
         for (Persona persona2 : personas) {
             System.out.println(persona2);
         }
+
+
     }
 
     public static void modificador(Persona vlad, int diez, int[] enteros1) {
@@ -188,6 +191,60 @@ public class Teoria4 {
         int i = diez * 10;
         for (int a = 0; a < enteros1.length; a++) {
             enteros1[a] *= 2;
+        }
+    }
+
+    public static void listas() {
+        ArrayList<String> listaArray = new ArrayList<>(Arrays.asList("a", "b", "c", "d"));
+        ArrayList<String> listaArray2 = new ArrayList();
+        listaArray2.add("a");
+        System.out.println(listaArray2.get(0));
+        listaArray2.remove(0);
+        for (String e : listaArray) {
+            System.out.println(e);
+        }
+        for (int i = 0; i < listaArray.size(); i++) {
+            System.out.println(i);
+        }
+        ArrayList<String> subLista = new ArrayList<>(listaArray.subList(1, 3));
+        for (String e : subLista) {
+            System.out.println(e);
+            ArrayList<Integer> listaEntetros = new ArrayList<>(Arrays.asList(1, 2, 4, 6, 8, 8));
+            System.out.println("indez de 8:" + listaEntetros.indexOf(8));
+            Collections.sort(listaEntetros);
+            System.out.println("indice de 8:" + Collections.binarySearch(listaEntetros, 8));
+            System.out.println(listaEntetros.contains(8));
+
+            //declare e inicialice una lista de personas que ordene por apellido a todos los alummnos de la clase, el orden de insercion
+// es el orden por el que estamos sentados
+
+            ArrayList<Persona> listaAlumnos = new ArrayList<>();
+            listaAlumnos.add(new Alumno("Pablo", "Parapar"));
+            listaAlumnos.add(new Alumno("Nabil", " ait Bouihia"));
+            listaAlumnos.add(new Alumno("Hector", " Trabado"));
+            listaAlumnos.add(new Alumno("Carla", " Neira"));
+            listaAlumnos.add(new Alumno("Diego", " Ferreiros"));
+            listaAlumnos.add(new Alumno("Africa", " Mendez"));
+            listaAlumnos.add(new Alumno("Pablo", " Pereira"));
+            listaAlumnos.add(new Alumno("Liuber", " Diaz"));
+            listaAlumnos.add(new Alumno("Fabian", " Alvarez"));
+            listaAlumnos.add(new Alumno("Andres", " Lopez"));
+            listaAlumnos.add(new Alumno("Manuel", " Mendez"));
+            listaAlumnos.add(new Alumno("Hernan", " Coronel"));
+            listaAlumnos.add(new Alumno("Ivan", " Diaz"));
+            listaAlumnos.add(new Alumno("Cristian", " Rodrigez"));
+
+            for (Persona a : listaAlumnos) {
+                System.out.println(a);
+            }
+
+
+            ArrayList colaCharcuteria = new ArrayList<>();
+
+            colaCharcuteria.add(new Profesor("Victor", "Blanco"));
+            colaCharcuteria.add(new Alumno("Manuel", "Mendez"));
+            colaCharcuteria.add(new Alumno("Pablo", "Parapar"));
+
         }
     }
 }

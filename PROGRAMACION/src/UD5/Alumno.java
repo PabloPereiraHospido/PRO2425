@@ -4,6 +4,10 @@ package UD5;
 public class Alumno extends Persona  {
     private String clase;
 
+    public Alumno(String nombre, String apellido) {
+        super(nombre, apellido);
+    }
+
     public Alumno() {
     }
 
