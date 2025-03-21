@@ -11,7 +11,16 @@ import java.util.Locale;
 import java.util.Random;
 
 
+/**
+ * @author pabloPereira
+ */
+
 public class Teoria3 {
+
+    /**
+     *
+     * @param valor
+     */
 
     private static void imprimirTablaMultiplicar(int valor) {
         System.out.println("Tabla de multiplicar del " + valor);
@@ -20,14 +29,27 @@ public class Teoria3 {
         }
     }
 
+    /**
+     *
+     * @param numero1
+     * @param numero2
+     * @return
+     */
     private static int sumar(int numero1, int numero2) {
 
         return numero1 + numero2;
     }
 
+    /**
+     *
+     * @param numero1
+     * @param numero2
+     * @return
+     */
     private static double hacerMedia(int numero1, int numero2) {
         return (double) (numero1 + numero2) / 2;
     }
+
 
     private static void imprimirPresentacion() {
         System.out.println("Pablo,edad 24,Lugo");
@@ -69,6 +91,11 @@ public class Teoria3 {
         int resultado = 2 * b;
     }
 
+    /**
+     *
+     * @param n
+     * @return
+     */
     public static int factorial(int n) {
         if (n <= 01) {
             return 1;

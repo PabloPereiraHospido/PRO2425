@@ -3,8 +3,13 @@ package ud5;
 import ud5.capaNegocio.Articulo;
 import ud5.capaNegocio.Cliente;
 import ud5.capaNegocio.Factura;
-
 import java.util.Scanner;
+
+
+/**
+ * @author pabloPereira
+ */
+
 
 public class Boletin5 {
     public static void main(String[] args) {

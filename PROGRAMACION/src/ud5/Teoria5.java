@@ -1,5 +1,9 @@
 package ud5;
 
+/**
+ * @author pabloPereira
+ */
+
 public class Teoria5 {
     public static void main(String[] args) {
 

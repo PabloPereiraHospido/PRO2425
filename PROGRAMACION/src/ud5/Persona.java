@@ -3,8 +3,13 @@ package ud5;
 
 import java.security.InvalidParameterException;
 
+/**
+ * @author pabloPereira
+ */
 
 public abstract class Persona implements SerHumano, Comparable<Persona> {
+
+
     private String nombre;
     private String apellido;
     private int edad;

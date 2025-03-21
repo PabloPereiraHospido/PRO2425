@@ -1,5 +1,9 @@
 package ud5;
 
+/**
+ * @author pabloPereira
+ */
+
 public abstract class FiguraGeometrica {
     private final String nombre;
 

@@ -1,5 +1,9 @@
 package ud5;
 
+/**
+ * @author pabloPereira
+ */
+
 public class Perro  extends Animal{
     @Override
     public void mueve() {

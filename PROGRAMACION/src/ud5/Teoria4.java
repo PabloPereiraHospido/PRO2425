@@ -1,5 +1,10 @@
 package ud5;
 
+/**
+ * @author pabloPereira
+ */
+
+
 public class Teoria4 {
     public static void main(String[] args) {
         System.out.println(Semaforo.AMBAR.ordinal());

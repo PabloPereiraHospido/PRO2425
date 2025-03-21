@@ -7,6 +7,11 @@ import ud5.Persona;
 import ud5.Profesor;
 
 
+/**
+ * @author pabloPereira
+ */
+
+
 public class Teoria4 {
     public static void main(String[] args) {
 

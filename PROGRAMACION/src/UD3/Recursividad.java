@@ -1,5 +1,9 @@
 package UD3;
 
+/**
+ * @author pabloPereira
+ */
+
 public class Recursividad {
     public static void main(String[] args) {
         int numero = 5;
@@ -9,6 +13,11 @@ public class Recursividad {
         System.out.println(invertir(numero2, ZERO));
     }
 
+    /**
+     *
+     * @param n
+     * @return
+     */
     private static long factorial(int n) {
         if (n <= 1) {
             return 1;
@@ -17,6 +26,12 @@ public class Recursividad {
         }
     }
 
+    /**
+     *
+     * @param n
+     * @param invertido
+     * @return
+     */
     private static int invertir(int n, int invertido) {
         if (n == 0) {
             return invertido * 10 + n;

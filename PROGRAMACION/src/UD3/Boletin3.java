@@ -4,9 +4,17 @@ import java.awt.*;
 import java.time.YearMonth;
 import java.util.Scanner;
 
+/**
+ * @author pabloPereira
+ */
 
 public class Boletin3 {
-
+    /**
+     *
+     * @param mes
+     * @param anho
+     * @return
+     */
     private static int ponerFecha(int mes, int anho) {
         try {
             YearMonth y = YearMonth.of(anho, mes);
@@ -68,11 +76,21 @@ public class Boletin3 {
         }
     }
 
+    /**
+     *
+     * @param c
+     * @return
+     */
     private static boolean esVocal(char c) {
         c = Character.toLowerCase(c);
         return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
     }
 
+    /**
+     *
+     * @param c
+     * @return
+     */
     private static boolean esConsonante(char c) {
         if (Character.isLetter(c)) {
             return !esVocal(c);
@@ -81,6 +99,10 @@ public class Boletin3 {
         }
     }
 
+    /**
+     *
+     * @param scanner
+     */
     private static void ejecutarClasificacion(Scanner scanner) {
         while (true) {
             // Solicitar altura
@@ -101,12 +123,21 @@ public class Boletin3 {
         }
     }
 
+    /**
+     *
+     * @param scanner
+     * @return
+     */
     private static double solicitarAltura(Scanner scanner) {
         System.out.print("Introduce la altura en cm (0 para salir): ");
         return scanner.nextDouble();
     }
 
-
+    /**
+     *
+     * @param scanner
+     * @return
+     */
     private static char solicitarSexo(Scanner scanner) {
         char sexo;
         while (true) {
@@ -120,6 +151,11 @@ public class Boletin3 {
         return sexo;
     }
 
+    /**
+     * 
+     * @param src
+     * @param c
+     */
     private static void contador(Scanner src, int c) {
         System.out.println("Introduce un texto:");
         String texto = src.nextLine();

@@ -2,6 +2,10 @@ package ud5;
 
 import java.util.Date;
 
+/**
+ * @author pabloPereira
+ */
+
 public class Coche {
 
     private String marca;

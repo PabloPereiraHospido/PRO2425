@@ -2,7 +2,16 @@ package RefuerzoUD2;
 
 import java.util.Scanner;
 
+/**
+ * @author pabloPereira
+ */
+
 public class EjerciciosRefuerzo {
+
+    /**
+     *
+     * @param args
+     */
 
     public static void main(String[] args) {
         //salarioNeto

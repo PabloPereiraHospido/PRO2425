@@ -1,8 +1,7 @@
 package ud5;
 
 /**
- * @author perhospab
- * @summary ejercicio code
+ * @author pabloPereira
  */
 
 public class Animal {

@@ -1,5 +1,9 @@
 package ud5;
 
+/**
+ * @author pabloPereira
+ */
+
 public class Rectangulo extends FiguraGeometrica {
     private final double base;
     double altura;
