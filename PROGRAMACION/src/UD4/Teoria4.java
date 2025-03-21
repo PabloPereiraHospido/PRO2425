@@ -5,9 +5,7 @@ import UD5.Persona;
 import UD5.Profesor;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.*;
 
 public class Teoria4 {
     public static void main(String[] args) {
@@ -183,7 +181,8 @@ public class Teoria4 {
             System.out.println(persona2);
         }
 
-
+        listas();
+        colas();
     }
 
     public static void modificador(Persona vlad, int diez, int[] enteros1) {
@@ -214,37 +213,60 @@ public class Teoria4 {
             Collections.sort(listaEntetros);
             System.out.println("indice de 8:" + Collections.binarySearch(listaEntetros, 8));
             System.out.println(listaEntetros.contains(8));
+        }
 
-            //declare e inicialice una lista de personas que ordene por apellido a todos los alummnos de la clase, el orden de insercion
+        //declare e inicialice una lista de personas que ordene por apellido a todos los alummnos de la clase, el orden de insercion
 // es el orden por el que estamos sentados
 
-            ArrayList<Persona> listaAlumnos = new ArrayList<>();
-            listaAlumnos.add(new Alumno("Pablo", "Parapar"));
-            listaAlumnos.add(new Alumno("Nabil", " ait Bouihia"));
-            listaAlumnos.add(new Alumno("Hector", " Trabado"));
-            listaAlumnos.add(new Alumno("Carla", " Neira"));
-            listaAlumnos.add(new Alumno("Diego", " Ferreiros"));
-            listaAlumnos.add(new Alumno("Africa", " Mendez"));
-            listaAlumnos.add(new Alumno("Pablo", " Pereira"));
-            listaAlumnos.add(new Alumno("Liuber", " Diaz"));
-            listaAlumnos.add(new Alumno("Fabian", " Alvarez"));
-            listaAlumnos.add(new Alumno("Andres", " Lopez"));
-            listaAlumnos.add(new Alumno("Manuel", " Mendez"));
-            listaAlumnos.add(new Alumno("Hernan", " Coronel"));
-            listaAlumnos.add(new Alumno("Ivan", " Diaz"));
-            listaAlumnos.add(new Alumno("Cristian", " Rodrigez"));
+        ArrayList<Persona> listaAlumnos = new ArrayList<>();
+        listaAlumnos.add(new Alumno("Pablo", "Parapar"));
+        listaAlumnos.add(new Alumno("Nabil", " ait Bouihia"));
+        listaAlumnos.add(new Alumno("Hector", " Trabado"));
+        listaAlumnos.add(new Alumno("Carla", " Neira"));
+        listaAlumnos.add(new Alumno("Diego", " Ferreiros"));
+        listaAlumnos.add(new Alumno("Africa", " Mendez"));
+        listaAlumnos.add(new Alumno("Pablo", " Pereira"));
+        listaAlumnos.add(new Alumno("Liuber", " Diaz"));
+        listaAlumnos.add(new Alumno("Fabian", " Alvarez"));
+        listaAlumnos.add(new Alumno("Andres", " Lopez"));
+        listaAlumnos.add(new Alumno("Manuel", " Mendez"));
+        listaAlumnos.add(new Alumno("Hernan", " Coronel"));
+        listaAlumnos.add(new Alumno("Ivan", " Diaz"));
+        listaAlumnos.add(new Alumno("Cristian", " Rodrigez"));
 
-            for (Persona a : listaAlumnos) {
-                System.out.println(a);
-            }
+        for (Persona a : listaAlumnos) {
+            System.out.println(a);
+        }
 
 
-            ArrayList colaCharcuteria = new ArrayList<>();
+        ArrayList<Persona> colaCharcuteria = new ArrayList<>();
 
-            colaCharcuteria.add(new Profesor("Victor", "Blanco"));
-            colaCharcuteria.add(new Alumno("Manuel", "Mendez"));
-            colaCharcuteria.add(new Alumno("Pablo", "Parapar"));
+        colaCharcuteria.add(new Profesor("Victor", "Blanco"));
+        colaCharcuteria.add(new Alumno("Manuel", "Mendez"));
+        colaCharcuteria.add(new Alumno("Pablo", "Parapar"));
 
+        for (Persona r : colaCharcuteria) {
+
+        }
+
+
+    }
+
+    public static void colas() {
+
+        /*
+        crear tres colas. el as dos primeras almacenaremos medio millar de numeros generados aleatoriamente
+        entre el 0 y50.luego recorreremos simultaneamente ambas colas y almacenaremos en la tercera aquellos
+        numeros que coinciden en valor y posicion
+         */
+
+        LinkedList<Random> cola1 = new LinkedList<>();
+        LinkedList<Random> cola2 = new LinkedList<>();
+        LinkedList<Random>cola3= new LinkedList<>();
+        for (int i=0;i<500;i++){
+            cola1.add(new Random());
+            cola2.add(new Random());
+            if (cola1.getFirst())
         }
     }
 }
