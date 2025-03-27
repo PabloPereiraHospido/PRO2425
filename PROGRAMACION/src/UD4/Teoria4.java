@@ -245,9 +245,7 @@ public class Teoria4 {
         colaCharcuteria.add(new Alumno("Manuel", "Mendez"));
         colaCharcuteria.add(new Alumno("Pablo", "Parapar"));
 
-        for (Persona r : colaCharcuteria) {
 
-        }
 
 
     }
@@ -262,11 +260,13 @@ public class Teoria4 {
 
         LinkedList<Random> cola1 = new LinkedList<>();
         LinkedList<Random> cola2 = new LinkedList<>();
-        LinkedList<Random>cola3= new LinkedList<>();
-        for (int i=0;i<500;i++){
+        LinkedList<Random> cola3 = new LinkedList<>();
+        for (int i = 0; i < 500; i++) {
             cola1.add(new Random());
             cola2.add(new Random());
-            if (cola1.getFirst())
+            System.out.println(cola1);
+            System.out.println(cola2);
+
         }
     }
 }
