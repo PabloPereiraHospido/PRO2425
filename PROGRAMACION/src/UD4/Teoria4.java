@@ -172,17 +172,59 @@ public class Teoria4 {
         for (String nombre3 : nombre) {
             System.out.println(nombre3);
         }
-        Arrays.sort(personas);
+      /* Arrays.sort(personas);
         for (Persona personas1 : persona) {
             System.out.println(personas1);
         }
         Arrays.sort(personas, Collections.reverseOrder());
         for (Persona persona2 : personas) {
             System.out.println(persona2);
-        }
+        } */
 
-        listas();
-        colas();
+
+        HashSet<String> conjunto = new HashSet<>();
+        conjunto.add("Lunes");
+        conjunto.add("Martes");
+        conjunto.add("Miercoles");
+        conjunto.add("Jueves");
+        conjunto.add("Viernes");
+        conjunto.add("Sabado");
+        conjunto.add("Sabado");
+        conjunto.add("Domingo");
+
+        Iterator w = conjunto.iterator();
+        while (w.hasNext()) {
+            System.out.println(w.next());
+        }
+        /*
+        crear un hashset de dos fromas:
+        1. con un iterator que muestre ademas una enumeracion
+        2.visualizarlo entero,con cada elemento seguido de comas
+         */
+        HashSet<String> forma1 = new HashSet<>();
+        forma1.add("manzanas");
+        forma1.add("peras");
+        forma1.add("limones");
+        Iterator ww = forma1.iterator();
+        while (ww.hasNext()) {
+            int n = 1;
+            System.out.println(n + "." + ww.next());
+            n++;
+        }
+        System.out.println("forma 2");
+        System.out.println(forma1);
+
+        Set articulitos = new HashSet<>();
+
+        Articulito pera = new Articulito("pera");
+        articulitos.add(pera);
+        System.out.println(articulitos);
+        Articulito manzana=new Articulito("manzana");
+        articulitos.add(manzana);
+        System.out.println(articulitos);
+        articulitos.remove(manzana);
+        System.out.println(articulitos);
+
     }
 
     public static void modificador(Persona vlad, int diez, int[] enteros1) {
@@ -191,6 +233,7 @@ public class Teoria4 {
         for (int a = 0; a < enteros1.length; a++) {
             enteros1[a] *= 2;
         }
+
     }
 
     public static void listas() {
@@ -244,8 +287,6 @@ public class Teoria4 {
         colaCharcuteria.add(new Profesor("Victor", "Blanco"));
         colaCharcuteria.add(new Alumno("Manuel", "Mendez"));
         colaCharcuteria.add(new Alumno("Pablo", "Parapar"));
-
-
 
 
     }
