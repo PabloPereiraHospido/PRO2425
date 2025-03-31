@@ -4,7 +4,6 @@ import UD5.Alumno;
 import UD5.Persona;
 import UD5.Profesor;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Teoria4 {
@@ -219,11 +218,53 @@ public class Teoria4 {
         Articulito pera = new Articulito("pera");
         articulitos.add(pera);
         System.out.println(articulitos);
-        Articulito manzana=new Articulito("manzana");
+        Articulito manzana = new Articulito("manzana");
         articulitos.add(manzana);
         System.out.println(articulitos);
-        articulitos.remove(manzana);
+        articulitos.remove(new Articulito("manzana"));
         System.out.println(articulitos);
+        Articulito limones = new Articulito("limones");
+        System.out.println(limones);
+
+        HashMap<String, Integer> mapa = new HashMap<>();
+        mapa.put("Pablo", 10);
+        mapa.put("Nabil", 5);
+        mapa.put("Carla", 0);
+        mapa.put("Diego", 7);
+        mapa.put(null, 3);
+        mapa.put(null, 4);
+        mapa.put("Fabian", null);
+        mapa.put("Andres", null);
+        System.out.println(mapa);
+        mapa.remove("Andres");
+        for (String clave : mapa.keySet()) {
+            System.out.println(clave);
+        }
+        for (Integer valor1 : mapa.values()) {
+            System.out.println(valor1);
+        }
+        for (Map.Entry<String, Integer> claveValor : mapa.entrySet()) {
+            System.out.println(claveValor);
+        }
+
+        TreeMap<String, Integer> mapaTree = new TreeMap<>();
+        mapaTree.put("Pablo", 10);
+        mapaTree.put("Nabil", 5);
+        mapaTree.put("Carla", 0);
+        mapaTree.put("Diego", 7);
+        // mapaTree.put(null, 3);
+        //  mapaTree.put(null, 4);
+        mapaTree.put("Fabian", null);
+        mapaTree.put("Andres", null);
+        for (Map.Entry<String, Integer> claveValor: mapaTree.entrySet()){
+            System.out.println(claveValor);
+        }
+        HashMap<String,String> inventario=new HashMap<>();
+
+        inventario.put("producto1","Ordenador");
+        inventario.put("producto2","Portatil");
+        inventario.put("producto3","Portatil");
+        
 
     }
 
